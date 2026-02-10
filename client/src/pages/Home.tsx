@@ -26,7 +26,7 @@ export default function Home() {
       icon: Brain,
       tags: ["Python", "TensorFlow", "Keras", "Deep Learning", "NLP"],
       link: "https://github.com/aditi-py/AI-Generated-Text-Detection",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/Qcws8bFLnTa00WZ762B0pg-img-4_1770689503000_na1fn_Y29kZS1hbmFseXRpY3M.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1Fjd3M4YkZMblRhMDBXWjc2MkIwcGctaW1nLTRfMTc3MDY4OTUwMzAwMF9uYTFmbl9ZMjlrWlMxaGJtRnNlWFJwWTNNLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=fxl2kyej1L4tG0Ot42Ah1TMDf-owP7VRdtOpxiZk2dVU-aLoT2gpoDAFrDjuXabl6iDEgV1a0zMsPbttVGpL5M~15zszSvdrPR~CLzsdfVaF9P0tpIANITKh2CjDncmzG72um9j9CfMa2drww45r1DWaPQseP0T5pxVaQCtrK~HB1xBwduSYemOb0EUXQ6NNydOH1g31Rch1pJIlU1UFXNECP~HTMnA3sbbVE2HGBXyrjTJOYkyy8QLiR5iWDyJXFWXkMEce5acUZLyRGprusOfxAd-FrWmG1R8DfuGPQH3Yb4gaRJHcniQnopWDF9KLGC65yi43ipDmVGs~hhsGuA__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-1_1770693895000_na1fn_YWktdGV4dC1kZXRlY3Rpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTFfMTc3MDY5Mzg5NTAwMF9uYTFmbl9ZV2t0ZEdWNGRDMWtaWFJsWTNScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Xb29J-UJnCJ5GES179oLSzag7N8bIwKyyRPe1GvuTLiEOSjDR2C~bkCioo8uonl1UKdKEXCvGuklWGa2epCxLhC12UNguIWSBk-WcQS65h9oAfs7OQVlpKIC1V0GUUPzs8MHo4k05Gkz4WNQllFI8d7rxckR7LVyLKdeB1WrJo-mHVRPk3fO5-M8f163RbjpqohTGQFlI~K0NtMQouz7mAyZaet6j6-IuT6aWSjzuPcu3G0gYJBMUkT6l8j4KhdMDNmRN5KrLmBEYXsUxoYFqiaqXNCbP01ACP6-jI0Xs9XubksoP8olBbb5TQgODIQfGO6n5CdrAAlhyvCg-xOAWg__"
     },
     {
       title: "Global Health Equity Analysis",
@@ -35,7 +35,7 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Python", "Pandas", "DuckDB", "Matplotlib", "Data Visualization"],
       link: "https://github.com/aditi-py/Global-Health-Equity-Analysis-Geographic-Economic-Distribution-Study",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/Qcws8bFLnTa00WZ762B0pg-img-2_1770689497000_na1fn_ZGFzaGJvYXJkLXZpc3VhbGl6YXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1Fjd3M4YkZMblRhMDBXWjc2MkIwcGctaW1nLTJfMTc3MDY4OTQ5NzAwMF9uYTFmbl9aR0Z6YUdKdllYSmtMWFpwYzNWaGJHbDZZWFJwYjI0LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=JuXhMdhbv0JTn7oWxG8HUHqdVnNNwpr0OqnYO8WQRsSC-46WygNVnfry-PhYeei4rlrfTx10k8jpggiL~qjoPZWq2vbdNfLkKKveOWE5~gejEeqjnVt7sEiSCmCcZmWLWsF9tJeMInnX~wz91s691e4og3AuTzy44sDLyscfLH0Dzo7xLiRL3-BAqeRvoEcs90beFK6K3yq95kvfdEdKvLSfdCL6oxxSTSelNP3~lGL8fXEpP-SD90yz8binwZtHUNrSWjNzfI5GSktv7aLoAHOHel-TrPg8UA4y7lduCPn2-UK4z-JVHXtvKF5-w-QKj968pC0vm4crx-~RVmo9-g__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-2_1770693898000_na1fn_Z2xvYmFsLWhlYWx0aC1lcXVpdHk.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTJfMTc3MDY5Mzg5ODAwMF9uYTFmbl9aMnh2WW1Gc0xXaGxZV3gwYUMxbGNYVnBkSGsucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=l6ftr743jOVGM1WPs50SNF49NXD~OJUiEjk~TSbTdpG-8aX7iphFF54MN9L0iTcheU46yDRmRZFUvg9j4F6hHJEV4sUT8ggzFaTQc408~5lvpODCgekdEq9BRap-jhKYhBBp3dFWmD64QXU465DDmipWYR-1lVykM14nDLANgvRgYUEBuJJstn7JP2sXiIdiRvuPNDstgS8BpX5gtdHtM3JW8A-QVxDUojLKwE4IlEFt25S4X5rX2vVDp24efIDi8odOLqpo0AOnSgCiTUeLse2qFotlWKO7NP1UKoWT5A4yB6RWq3GMV1cODuDgQJbnlNan29Wy8EIddUFa5zypPA__"
     },
     {
       title: "Clustering for Customer Segmentation",
@@ -44,7 +44,7 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Python", "Pandas", "Seaborn", "Matplotlib", "Statistics"],
       link: "https://github.com/aditi-py/Clustering-for-Customer-Segmentation",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/Qcws8bFLnTa00WZ762B0pg-img-3_1770689497000_na1fn_d29ya2Zsb3ctYXV0b21hdGlvbg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1Fjd3M4YkZMblRhMDBXWjc2MkIwcGctaW1nLTNfMTc3MDY4OTQ5NzAwMF9uYTFmbl9kMjl5YTJac2IzY3RZWFYwYjIxaGRHbHZiZy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=kUfr39SNfSvZn8rp7LyyQPjcjiW3CzrPsgCdDFBROWTNmQJa~THopGoOA7oiv8oV8IbDHUc5tEWQcQ0TV9H4OLwh8wsxiiLXKI5eJOSGJY9CQ-loG9gmwQHn5rYScD10AMovpK55bcCTgE2GOGa0niEy5qh8usX1qsbnYlP5YLr6-3NbaCkIRsiCw-6djm39qGsW5Jb0cyNFqy7swXsatNS3NqO~xSYM0mc0FHvEdX3kst6T~ja6piPKQbLXs6sfSECoJ0qogxPzWAxjZKs0h18DztikkvymKPBWGgm9Yxf8El7YhRtw3zrhHdKDpKJOUwMnV1Jjfff8eBrbJxhyxQ__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-3_1770693902000_na1fn_Y3VzdG9tZXItY2x1c3RlcmluZw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTNfMTc3MDY5MzkwMjAwMF9uYTFmbl9ZM1Z6ZEc5dFpYSXRZMngxYzNSbGNtbHVady5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=hKOCkyaWYEFxMgfx3gCzjg2hsdbD5YPKeFXLX81DIBRXdlp1tS5dOXxQ763RaYFUD3IRub98eyJZInRyH4ZdFcQTE~SdOc0K2YtNlmZvvekMjr0vzpaIydauM~HbZZdITVdPo-2Epieoz~RJAQiUlRYLKqGcCHW-HE5VF28Ro1Hvanpjg9hAKDDnBVKrH8xfH7XXKuFECfa0qnwNevF5nqiZFai0BooKA2vdF9XQ3nVICTRhCBuZ5RJyYHnFHs7HbFAh6REGNfKP52~VMuecikvdgUqWXtFqmfipOoOitULPgEXPkIHr7rDxotJmws2j9U6Q0mHWT8lx1uMY-LnCZg__"
     },
     {
       title: "UFC Looker Dashboard",
@@ -53,7 +53,7 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
       link: "#",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/Qcws8bFLnTa00WZ762B0pg-img-2_1770689497000_na1fn_ZGFzaGJvYXJkLXZpc3VhbGl6YXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1Fjd3M4YkZMblRhMDBXWjc2MkIwcGctaW1nLTJfMTc3MDY4OTQ5NzAwMF9uYTFmbl9aR0Z6YUdKdllYSmtMWFpwYzNWaGJHbDZZWFJwYjI0LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=JuXhMdhbv0JTn7oWxG8HUHqdVnNNwpr0OqnYO8WQRsSC-46WygNVnfry-PhYeei4rlrfTx10k8jpggiL~qjoPZWq2vbdNfLkKKveOWE5~gejEeqjnVt7sEiSCmCcZmWLWsF9tJeMInnX~wz91s691e4og3AuTzy44sDLyscfLH0Dzo7xLiRL3-BAqeRvoEcs90beFK6K3yq95kvfdEdKvLSfdCL6oxxSTSelNP3~lGL8fXEpP-SD90yz8binwZtHUNrSWjNzfI5GSktv7aLoAHOHel-TrPg8UA4y7lduCPn2-UK4z-JVHXtvKF5-w-QKj968pC0vm4crx-~RVmo9-g__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-4_1770693910000_na1fn_dWZjLWRhc2hib2FyZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTRfMTc3MDY5MzkxMDAwMF9uYTFmbl9kV1pqTFdSaGMyaGliMkZ5WkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=WLrYyWeLOxY0V1eVpb6GApVc08eppJRZxsVdpti2ptyyTLnSmJz-hr8NN19JBWeZMGpLK2a1IK4W-2wqoeLvpJZcbdELIyRHcevcxWdFHt4Pc38qvpXqWVT7TsLDomR0yu27XDUQ6nHUKjVyIKkDCeRJOH5hYcS2wlTY5XZoNZ199zif9aaaatFg91fNEqhTjgzg~8NoAGX1XACno0dQPjJbXoGTxNMJ5gxZh1nlOdP7n~2BSKG9AClTt89nZz-vQeLQPFna-MgK2LCZ82ZqE8TTyYtckbnzK-2EKnIrA7YurtRqbchmmv8-vzOYdg85LEItGk0VT-uc--v1Lk-1dg__"
     },
     {
       title: "Crisis Tracking Automation (Coming Soon)",
@@ -62,7 +62,16 @@ export default function Home() {
       icon: Workflow,
       tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Automation"],
       link: "#",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/Qcws8bFLnTa00WZ762B0pg-img-3_1770689497000_na1fn_d29ya2Zsb3ctYXV0b21hdGlvbg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1Fjd3M4YkZMblRhMDBXWjc2MkIwcGctaW1nLTNfMTc3MDY4OTQ5NzAwMF9uYTFmbl9kMjl5YTJac2IzY3RZWFYwYjIxaGRHbHZiZy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=kUfr39SNfSvZn8rp7LyyQPjcjiW3CzrPsgCdDFBROWTNmQJa~THopGoOA7oiv8oV8IbDHUc5tEWQcQ0TV9H4OLwh8wsxiiLXKI5eJOSGJY9CQ-loG9gmwQHn5rYScD10AMovpK55bcCTgE2GOGa0niEy5qh8usX1qsbnYlP5YLr6-3NbaCkIRsiCw-6djm39qGsW5Jb0cyNFqy7swXsatNS3NqO~xSYM0mc0FHvEdX3kst6T~ja6piPKQbLXs6sfSECoJ0qogxPzWAxjZKs0h18DztikkvymKPBWGgm9Yxf8El7YhRtw3zrhHdKDpKJOUwMnV1Jjfff8eBrbJxhyxQ__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-5_1770693896000_na1fn_Y3Jpc2lzLXRyYWNraW5nLWF1dG9tYXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTVfMTc3MDY5Mzg5NjAwMF9uYTFmbl9ZM0pwYzJsekxYUnlZV05yYVc1bkxXRjFkRzl0WVhScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=R7Lc9Z6aH4FiV4cJkkLGUwFrZkTLF6LE6EzUCAmtuNqPXDNkVsWoavc7l7QmG32jaO1iCZACr-06ygzGj1FbRCO7rK~PogE8kcTTzsdtSFOjq6rrG6fWtPgjWhZePnqLuuIc9vPj5T9hKmyuHuapnnKLe99hxk63E6shoNQOpsT9KW8IswuyoRDe91E1cx1izbfSmke8wz72qTWY9NlQoQSaWPp6S3Xn7Yd8tDe8Y3SKj~SuGIeAVhEqhoICd556xVzEGHuyTYzOeUAaaJXS~NwWqgosjqn5OYRS3RsT5qtsrRHOEO9aBvwllzh81sBFunQQ0zhOC4eTsQvJWpqlzg__"
+    },
+    {
+      title: "Tableau Public Dashboards",
+      description: "Collection of interactive Tableau dashboards showcasing data visualization expertise. Projects include USA airports heatmap analysis, stock market trends, sales performance metrics, streaming platform comparison, and global happiness index analysis.",
+      type: "Data Visualization",
+      icon: BarChart3,
+      tags: ["Tableau", "Data Visualization", "Analytics", "Business Intelligence"],
+      link: "https://public.tableau.com/app/profile/aditi.neema/vizzes",
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/5VTPbicP8C7wQkXmEkNh0H-img-1_1770693949000_na1fn_dGFibGVhdS1kYXNoYm9hcmRz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzVWVFBiaWNQOEM3d1FrWG1Fa05oMEgtaW1nLTFfMTc3MDY5Mzk0OTAwMF9uYTFmbl9kR0ZpYkdWaGRTMWtZWE5vWW05aGNtUnoucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=O5XpMKT9QyxlVYdt0z66RANgt2X47-cysrr8pfzIfpG5D-hR91csT0At2x9QE0t7dfkBTBMnJ8a1smKeQ4TUQ4UWe7JusXNAaC698m2i~wkhPHdrA3wkLgOWHscGz6lqlKjho9sYImXskOG8cCgp89L3~-GB7rsi8~Pb2XjJ6ZX2JbVyGEsln3u2X-CCxqVqVyOEhC8NaOCJ-19Dg39x5WpsIFOt2PGKigQUAKD8OOiofW-29acQhivu9w0-SlI0LJfeeqsKGsyuYHvs622nt1pouAft1NRf9fSJ6YIXRaiJzg4WgU9EWO9HaA8TucHGi3-qBpVADUwSQZKcwpa~DQ__"
     }
   ];
 
@@ -324,21 +333,7 @@ export default function Home() {
               );
             })}
           </div>
-          <div className="mt-12 p-8 rounded-lg bg-card/50 border border-accent/30 text-center">
-            <p className="text-muted-foreground mb-4">
-              Explore more projects on my Tableau Public profile
-            </p>
-            <Button 
-              asChild
-              variant="outline"
-              className="gap-2 border-accent hover:bg-accent/10"
-            >
-              <a href="https://public.tableau.com/app/profile/aditi.neema" target="_blank" rel="noopener noreferrer">
-                <BarChart3 className="h-4 w-4" />
-                View Tableau Dashboards
-              </a>
-            </Button>
-          </div>
+
         </div>
       </section>
 
