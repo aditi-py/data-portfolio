@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import MilkyWayBackground from "./components/MilkyWayBackground";
 
 
 function Router() {
@@ -32,7 +33,10 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <MilkyWayBackground />
+          <div className="relative z-10">
+            <Router />
+          </div>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
