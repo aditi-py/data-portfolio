@@ -1,4 +1,4 @@
-/**
+/*
  * Vibrant Constellation Design - Data Portfolio
  * Poppy colors with cosmic dark background
  * Star/constellation visual elements
@@ -26,7 +26,7 @@ export default function Home() {
       icon: Brain,
       tags: ["Python", "TensorFlow", "Keras", "Deep Learning", "NLP"],
       link: "https://github.com/aditi-py/AI-Generated-Text-Detection",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-1_1770693895000_na1fn_YWktdGV4dC1kZXRlY3Rpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTFfMTc3MDY5Mzg5NTAwMF9uYTFmbl9ZV2t0ZEdWNGRDMWtaWFJsWTNScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Xb29J-UJnCJ5GES179oLSzag7N8bIwKyyRPe1GvuTLiEOSjDR2C~bkCioo8uonl1UKdKEXCvGuklWGa2epCxLhC12UNguIWSBk-WcQS65h9oAfs7OQVlpKIC1V0GUUPzs8MHo4k05Gkz4WNQllFI8d7rxckR7LVyLKdeB1WrJo-mHVRPk3fO5-M8f163RbjpqohTGQFlI~K0NtMQouz7mAyZaet6j6-IuT6aWSjzuPcu3G0gYJBMUkT6l8j4KhdMDNmRN5KrLmBEYXsUxoYFqiaqXNCbP01ACP6-jI0Xs9XubksoP8olBbb5TQgODIQfGO6n5CdrAAlhyvCg-xOAWg__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/NJA5yEZyGdlBas5LQJBe2a-img-1_1770757499000_na1fn_YWktdGV4dC1kZXRlY3Rpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L05KQTV5RVp5R2RsQmFzNUxRSkJlMmEtaW1nLTFfMTc3MDc1NzQ5OTAwMF9uYTFmbl9ZV2t0ZEdWNGRDMWtaWFJsWTNScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=clRUPytQ5DdVT2qOefb-OinukAzMryBYonu21jKZ3jqBLHCS~dWYh9GvISpJlRR7b6o1-nQU~2r~6EvLMioZY~BUMkp5eDEffH9pkX0uhDPW~~gDxQGtGBKxLCaM8IUaOuM8Etcoh-9GCQmnTw2Wgv8ZYYGPHgaS7pl9HKmK0skDH-zNANuUl4mWT0E-8JR0L4u3j1YVLhI9hCU5ScyVlRDzUkjdtZSlTH~HAaLktE~7bChH7t9nr2zSn9tGqevOq5khgHYp2NCOK9J-BQPDvU7x38TNg-0J7WDZLJ4jcSjDQ9gRnzJg8Py1inWlhUwTiyVL9VxAeY8V2tEZ4KqMEQ__"
     },
     {
       title: "Global Health Equity Analysis",
@@ -35,7 +35,7 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Python", "Pandas", "DuckDB", "Matplotlib", "Data Visualization"],
       link: "https://github.com/aditi-py/Global-Health-Equity-Analysis-Geographic-Economic-Distribution-Study",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-2_1770693898000_na1fn_Z2xvYmFsLWhlYWx0aC1lcXVpdHk.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTJfMTc3MDY5Mzg5ODAwMF9uYTFmbl9aMnh2WW1Gc0xXaGxZV3gwYUMxbGNYVnBkSGsucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=l6ftr743jOVGM1WPs50SNF49NXD~OJUiEjk~TSbTdpG-8aX7iphFF54MN9L0iTcheU46yDRmRZFUvg9j4F6hHJEV4sUT8ggzFaTQc408~5lvpODCgekdEq9BRap-jhKYhBBp3dFWmD64QXU465DDmipWYR-1lVykM14nDLANgvRgYUEBuJJstn7JP2sXiIdiRvuPNDstgS8BpX5gtdHtM3JW8A-QVxDUojLKwE4IlEFt25S4X5rX2vVDp24efIDi8odOLqpo0AOnSgCiTUeLse2qFotlWKO7NP1UKoWT5A4yB6RWq3GMV1cODuDgQJbnlNan29Wy8EIddUFa5zypPA__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/NJA5yEZyGdlBas5LQJBe2a-img-2_1770757499000_na1fn_Z2xvYmFsLWhlYWx0aC1lcXVpdHk.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L05KQTV5RVp5R2RsQmFzNUxRSkJlMmEtaW1nLTJfMTc3MDc1NzQ5OTAwMF9uYTFmbl9aMnh2WW1Gc0xXaGxZV3gwYUMxbGNYVnBkSGsucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=WoBPqY8MgXG2cNAHJRi8MIG1eyw~qHNUPRibydqr55MPjUY4LSdsGHtlruTdurbOHYgrG~Qo2KGCbkUrcKDA3jIOIhANVQwQrBZywQxB8gOxEwSzqDVgtMWB1dYVgcrTRd6lMLyHwj3wGu2Lc0Eo0pbkfxETfbETpi6OFktbgVB~x3~KYPsWutfuGT3c9do5tMs-ITm0GB52EC72a-LjmW2djSa6zjBKEIWU-9MDXeeKBAxX~XPPuGo43oTOOKKNEtW9ESYN7C4SBPOFxj-jXkynO9h9N4e1JwcGmXirVahQNpEQHqgNAVnRba0jnf0QRTUHJ3I2FIXIC6iRwLHn6Q__"
     },
     {
       title: "Clustering for Customer Segmentation",
@@ -44,7 +44,16 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Python", "Pandas", "Seaborn", "Matplotlib", "Statistics"],
       link: "https://github.com/aditi-py/Clustering-for-Customer-Segmentation",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-3_1770693902000_na1fn_Y3VzdG9tZXItY2x1c3RlcmluZw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTNfMTc3MDY5MzkwMjAwMF9uYTFmbl9ZM1Z6ZEc5dFpYSXRZMngxYzNSbGNtbHVady5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=hKOCkyaWYEFxMgfx3gCzjg2hsdbD5YPKeFXLX81DIBRXdlp1tS5dOXxQ763RaYFUD3IRub98eyJZInRyH4ZdFcQTE~SdOc0K2YtNlmZvvekMjr0vzpaIydauM~HbZZdITVdPo-2Epieoz~RJAQiUlRYLKqGcCHW-HE5VF28Ro1Hvanpjg9hAKDDnBVKrH8xfH7XXKuFECfa0qnwNevF5nqiZFai0BooKA2vdF9XQ3nVICTRhCBuZ5RJyYHnFHs7HbFAh6REGNfKP52~VMuecikvdgUqWXtFqmfipOoOitULPgEXPkIHr7rDxotJmws2j9U6Q0mHWT8lx1uMY-LnCZg__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/NJA5yEZyGdlBas5LQJBe2a-img-3_1770757498000_na1fn_Y3VzdG9tZXItY2x1c3RlcmluZw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L05KQTV5RVp5R2RsQmFzNUxRSkJlMmEtaW1nLTNfMTc3MDc1NzQ5ODAwMF9uYTFmbl9ZM1Z6ZEc5dFpYSXRZMngxYzNSbGNtbHVady5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=IQojXN-WIHtS4Tl~BD1DbYEoVTMpPak39VAczXE3v-6LEu~RvVYLxuaRgDHKzM2W~gc-9WgJvnTR9M~d0m9SbxwtedLuXu8vaX2zWcNY2v4918ae9MFQ5dRQD6NTPao1~C6zmE40Z94NFG48e-8sCmOB9rpyeL4j6ydp0aW5QAglpzX3Ww0aV7w~TaqEsItRG~QbpF37jeyj4Y8l4wAYsnxAi0tZvE1JxanyYDpauuNFqvBTVlylGBMbWfLHss7-cv1Zd2lIjHyWSh5cdWtRIbPesDdAbUp1VxQeT8h6AzgMv10aLq9uY6CRzDwHum-v8I4mffjm9ndPWc127iFEwQ__"
+    },
+    {
+      title: "Insurance Policy Cancellation Prediction",
+      description: "Multiclass predictive model analyzing 1M+ insurance policies from the Kangaroo dataset (2013-2017). Built feature engineering pipeline to predict cancellation likelihood, identifying that coverage type C had highest dissatisfaction with 35K+ cancellations.",
+      type: "Predictive Analytics",
+      icon: Brain,
+      tags: ["Python", "Scikit-learn", "Feature Engineering", "Classification", "Data Mining"],
+      link: "https://github.com/aditi-py/Policy-Cancelations",
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SlxILljGuahBXZrdO2lVYd-img-2_1770757547000_na1fn_cG9saWN5LWNhbmNlbGxhdGlvbnM.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NseElMbGpHdWFoQlhacmRPMmxWWWQtaW1nLTJfMTc3MDc1NzU0NzAwMF9uYTFmbl9jRzlzYVdONUxXTmhibU5sYkd4aGRHbHZibk0ucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=seNGA3A5qHPiBd9YHBWmRePfy4LDR0ZRjSvO~wlsXzp1oxkF9prVQDwK8Rkn-ylKoZNZ9PH64N7dDuJaDnsVe9znO4ubg6fMDGqCjZoup2kyNtFHuIA5uTjIW9t9KfHPSElHxeXI2fplp78KZGk03zmdAYwbgOm5m3hVjWSbiupKe8A6woP8ToZe5b7BG6hS7JB-yAD-Vh~8RrQnr2XzEUVcM1Tk1qlDNU6VRHVjNMrRKiYfs1H1OIk1HQ5-Dy-jBYgVOtkPGU2KsnWgRdLhZXU7pVHrRvHiJdIdLobH-~CWZKyXs7ZfbCiWwVAF7glhjH2RKkqzT9W5YGF4EEQ5lg__"
     },
     {
       title: "UFC Looker Dashboard",
@@ -53,7 +62,7 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
       link: "#",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-4_1770693910000_na1fn_dWZjLWRhc2hib2FyZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTRfMTc3MDY5MzkxMDAwMF9uYTFmbl9kV1pqTFdSaGMyaGliMkZ5WkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=WLrYyWeLOxY0V1eVpb6GApVc08eppJRZxsVdpti2ptyyTLnSmJz-hr8NN19JBWeZMGpLK2a1IK4W-2wqoeLvpJZcbdELIyRHcevcxWdFHt4Pc38qvpXqWVT7TsLDomR0yu27XDUQ6nHUKjVyIKkDCeRJOH5hYcS2wlTY5XZoNZ199zif9aaaatFg91fNEqhTjgzg~8NoAGX1XACno0dQPjJbXoGTxNMJ5gxZh1nlOdP7n~2BSKG9AClTt89nZz-vQeLQPFna-MgK2LCZ82ZqE8TTyYtckbnzK-2EKnIrA7YurtRqbchmmv8-vzOYdg85LEItGk0VT-uc--v1Lk-1dg__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/NJA5yEZyGdlBas5LQJBe2a-img-4_1770757502000_na1fn_dWZjLWRhc2hib2FyZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L05KQTV5RVp5R2RsQmFzNUxRSkJlMmEtaW1nLTRfMTc3MDc1NzUwMjAwMF9uYTFmbl9kV1pqTFdSaGMyaGliMkZ5WkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=EDXapXqW~23FhnsZZinX4aCt6nRmGlriBBGNl3JqsOU0R7xy4lE0AVFiiaXQv-BTsxZH3lIt202oHddrF6DiRFrA4jxa5H50qcUmeHhZcuX6TGqP633affhctUCJHpycY4ZVouqABT47uMnCIBEfCBEzRvyzQIt7vQEaCmtalptidrkYX6LRsNo4YbLGAw~PEEze4TegQkuvzAdxM8th6RcucVyVXqSVQsjTQPRI~Kvj~7xwMoRe3kVH3HXver3nUXxrwwIYAhN0xFZzNvE1Uwy64XpNTSAqHvpu8i0MFP8wXmD0OK5fcS1eBUFCjqLecUREVqczvTIDKm4-zlXlPA__"
     },
     {
       title: "Crisis Tracking Automation (Coming Soon)",
@@ -62,7 +71,7 @@ export default function Home() {
       icon: Workflow,
       tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Automation"],
       link: "#",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SiQhB47F1tVYRUbu1AlTai-img-5_1770693896000_na1fn_Y3Jpc2lzLXRyYWNraW5nLWF1dG9tYXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NpUWhCNDdGMXRWWVJVYnUxQWxUYWktaW1nLTVfMTc3MDY5Mzg5NjAwMF9uYTFmbl9ZM0pwYzJsekxYUnlZV05yYVc1bkxXRjFkRzl0WVhScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=R7Lc9Z6aH4FiV4cJkkLGUwFrZkTLF6LE6EzUCAmtuNqPXDNkVsWoavc7l7QmG32jaO1iCZACr-06ygzGj1FbRCO7rK~PogE8kcTTzsdtSFOjq6rrG6fWtPgjWhZePnqLuuIc9vPj5T9hKmyuHuapnnKLe99hxk63E6shoNQOpsT9KW8IswuyoRDe91E1cx1izbfSmke8wz72qTWY9NlQoQSaWPp6S3Xn7Yd8tDe8Y3SKj~SuGIeAVhEqhoICd556xVzEGHuyTYzOeUAaaJXS~NwWqgosjqn5OYRS3RsT5qtsrRHOEO9aBvwllzh81sBFunQQ0zhOC4eTsQvJWpqlzg__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/NJA5yEZyGdlBas5LQJBe2a-img-5_1770757505000_na1fn_Y3Jpc2lzLXRyYWNraW5nLWF1dG9tYXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L05KQTV5RVp5R2RsQmFzNUxRSkJlMmEtaW1nLTVfMTc3MDc1NzUwNTAwMF9uYTFmbl9ZM0pwYzJsekxYUnlZV05yYVc1bkxXRjFkRzl0WVhScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=eBS8QYr4d1-RZ~iU10LhET7OkG30CKO56zf2hxrBB6WfriwrID5pjwNJdUD1ZSFvfDXHCll9vrmilbN5jAyJNh9X2NQkRGxMVeDbY2oiT7O2LXHNy0zUKA4LDlqQZeyNHlKSJy2qOt7Ej27uPvhnk~CVKKByWNHmNjljDjKtXx4lOiJ6tEDvD5MmZTsK95hZ5u3qgJUVSWkkf4ZhhZWm8xtB0HgnlYMHwHAUusrsdcgNTcpTXVY4mD~SPz~mNl12VDS8JCv0mXQMbHtphxFi9aquaMcKmkRdEknFKDA3VupagICaOsAJRBTH4qMCXiiKrkEO68oNskESdJbfpowqrA__"
     },
     {
       title: "Tableau Public Dashboards",
@@ -71,7 +80,7 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Tableau", "Data Visualization", "Analytics", "Business Intelligence"],
       link: "https://public.tableau.com/app/profile/aditi.neema/vizzes",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/5VTPbicP8C7wQkXmEkNh0H-img-1_1770693949000_na1fn_dGFibGVhdS1kYXNoYm9hcmRz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzVWVFBiaWNQOEM3d1FrWG1Fa05oMEgtaW1nLTFfMTc3MDY5Mzk0OTAwMF9uYTFmbl9kR0ZpYkdWaGRTMWtZWE5vWW05aGNtUnoucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=O5XpMKT9QyxlVYdt0z66RANgt2X47-cysrr8pfzIfpG5D-hR91csT0At2x9QE0t7dfkBTBMnJ8a1smKeQ4TUQ4UWe7JusXNAaC698m2i~wkhPHdrA3wkLgOWHscGz6lqlKjho9sYImXskOG8cCgp89L3~-GB7rsi8~Pb2XjJ6ZX2JbVyGEsln3u2X-CCxqVqVyOEhC8NaOCJ-19Dg39x5WpsIFOt2PGKigQUAKD8OOiofW-29acQhivu9w0-SlI0LJfeeqsKGsyuYHvs622nt1pouAft1NRf9fSJ6YIXRaiJzg4WgU9EWO9HaA8TucHGi3-qBpVADUwSQZKcwpa~DQ__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SlxILljGuahBXZrdO2lVYd-img-1_1770757554000_na1fn_dGFibGVhdS1kYXNoYm9hcmRz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NseElMbGpHdWFoQlhacmRPMmxWWWQtaW1nLTFfMTc3MDc1NzU0MDAwMF9uYTFmbl9kR0ZpYkdWaGRTMWtZWE5vWW05aGNtUnoucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=VEI1hC3t~xgO4aXa~qvnMmcmWnN11f0oXWetBCbvoRar6trr72261~vY0cKWTkkMKT9IotWfv~7lVqGHqrCujfvyEREQy4mHUyYXnuyH0ryTDYDl2bZ66~qTbRAYb79YacZqs7wuQE~SPosQgvKl~thzjstuh~71Um3YWk~BARgNlgAGstJIhKv60r5m6kHWUHEvh4pZztd3d4kZcUa0WmTVdqukihhqDnpICcnxyHXLpKTHW~RF0lgBGbl5eFRsealVwhYOAqjNdsXgdXZjkcBblnSN1~wl5KYSBLJy6NfznW9JPdO1a2tLgHxrVEzERUIXXOPpVOyZJBXwXshjaQ__"
     }
   ];
 
@@ -98,11 +107,8 @@ export default function Home() {
               <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
                 Contact
               </a>
-              <Button 
-                onClick={handleResumeClick}
-                className="gap-2 bg-gradient-to-r from-[#ec4899] to-[#a469d5] hover:from-[#f472b6] hover:to-[#c084fc] text-white border-0"
-              >
-                <FileText className="h-4 w-4" />
+              <Button onClick={handleResumeClick} variant="default" size="sm" className="gap-2">
+                <FileText className="w-4 h-4" />
                 Resume
               </Button>
             </div>
@@ -110,149 +116,90 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - Cosmic constellation theme */}
-      <section className="relative overflow-hidden border-b border-border">
-        <div className="absolute inset-0 opacity-20">
-          <svg className="w-full h-full" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
-            {/* Constellation pattern */}
-            <circle cx="100" cy="100" r="2" fill="#ec4899" opacity="0.6" />
-            <circle cx="300" cy="150" r="2" fill="#a469d5" opacity="0.6" />
-            <circle cx="500" cy="80" r="2" fill="#06b6d4" opacity="0.6" />
-            <circle cx="700" cy="200" r="2" fill="#f97316" opacity="0.6" />
-            <circle cx="900" cy="120" r="2" fill="#ec4899" opacity="0.6" />
-            <circle cx="1100" cy="250" r="2" fill="#a469d5" opacity="0.6" />
-            <circle cx="200" cy="400" r="2" fill="#06b6d4" opacity="0.6" />
-            <circle cx="600" cy="450" r="2" fill="#f97316" opacity="0.6" />
-            <circle cx="1000" cy="400" r="2" fill="#ec4899" opacity="0.6" />
-            {/* Connecting lines */}
-            <line x1="100" y1="100" x2="300" y2="150" stroke="#a469d5" strokeWidth="0.5" opacity="0.3" />
-            <line x1="300" y1="150" x2="500" y2="80" stroke="#06b6d4" strokeWidth="0.5" opacity="0.3" />
-            <line x1="500" y1="80" x2="700" y2="200" stroke="#f97316" strokeWidth="0.5" opacity="0.3" />
-            <line x1="700" y1="200" x2="900" y2="120" stroke="#ec4899" strokeWidth="0.5" opacity="0.3" />
-          </svg>
-        </div>
-        <div className="container relative">
-          <div className="grid lg:grid-cols-12 gap-12 py-24 lg:py-32">
-            <div className="lg:col-span-7 space-y-8">
-              <div className="space-y-4">
-                <h1 className="font-display text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-[#ec4899] via-[#a469d5] to-[#06b6d4] bg-clip-text text-transparent">
-                  Data Engineer & Analyst
-                </h1>
-                <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                  4+ years transforming legacy systems into modern, automated data solutions. Specializing in scalable pipelines, predictive models, and data-driven insights.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <Button 
-                  asChild
-                  className="gap-2 bg-gradient-to-r from-[#ec4899] to-[#a469d5] hover:from-[#f472b6] hover:to-[#c084fc] text-white border-0"
-                >
-                  <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
-                    <Github className="h-5 w-5" />
+      {/* Hero Section */}
+      <section className="py-20 md:py-32 border-b border-border">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-[#ec4899] via-[#a469d5] to-[#06b6d4] bg-clip-text text-transparent">
+                Data Engineer & Analyst
+              </h1>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                4+ years transforming legacy systems into modern, automated data solutions. Specializing in scalable pipelines, predictive models, and data-driven insights.
+              </p>
+              <div className="flex gap-4">
+                <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
+                  <Button variant="default" size="lg" className="gap-2">
+                    <Github className="w-5 h-5" />
                     View GitHub
-                  </a>
-                </Button>
-                <Button 
-                  asChild
-                  variant="outline" 
-                  className="gap-2 border-accent hover:bg-accent/10"
-                >
-                  <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="h-5 w-5" />
+                  </Button>
+                </a>
+                <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="lg" className="gap-2">
+                    <Linkedin className="w-5 h-5" />
                     LinkedIn
-                  </a>
-                </Button>
+                  </Button>
+                </a>
               </div>
             </div>
-            <div className="lg:col-span-5 flex items-center justify-center">
-              <div className="grid grid-cols-2 gap-6 w-full max-w-md">
-                <Card className="p-6 border-accent/50 bg-card/50 backdrop-blur glow-secondary">
-                  <div className="text-5xl font-display font-bold bg-gradient-to-r from-[#ec4899] to-[#f97316] bg-clip-text text-transparent mb-2">4+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </Card>
-                <Card className="p-6 border-accent/50 bg-card/50 backdrop-blur glow-primary">
-                  <div className="text-5xl font-display font-bold bg-gradient-to-r from-[#a469d5] to-[#06b6d4] bg-clip-text text-transparent mb-2">20+</div>
-                  <div className="text-sm text-muted-foreground">Projects Built</div>
-                </Card>
-                <Card className="p-6 border-accent/50 bg-card/50 backdrop-blur glow-accent">
-                  <div className="text-5xl font-display font-bold bg-gradient-to-r from-[#06b6d4] to-[#a469d5] bg-clip-text text-transparent mb-2">100M+</div>
-                  <div className="text-sm text-muted-foreground">Records Processed</div>
-                </Card>
-                <Card className="p-6 border-accent/50 bg-card/50 backdrop-blur glow-secondary">
-                  <div className="text-5xl font-display font-bold bg-gradient-to-r from-[#f97316] to-[#ec4899] bg-clip-text text-transparent mb-2">25+</div>
-                  <div className="text-sm text-muted-foreground">Tools Mastered</div>
-                </Card>
-              </div>
+            <div className="grid grid-cols-2 gap-4">
+              <Card className="p-6 border-border bg-card/50 backdrop-blur">
+                <div className="text-3xl font-bold bg-gradient-to-r from-[#ec4899] to-[#a469d5] bg-clip-text text-transparent">4+</div>
+                <div className="text-sm text-muted-foreground mt-2">Years Experience</div>
+              </Card>
+              <Card className="p-6 border-border bg-card/50 backdrop-blur">
+                <div className="text-3xl font-bold bg-gradient-to-r from-[#a469d5] to-[#06b6d4] bg-clip-text text-transparent">20+</div>
+                <div className="text-sm text-muted-foreground mt-2">Projects Built</div>
+              </Card>
+              <Card className="p-6 border-border bg-card/50 backdrop-blur">
+                <div className="text-3xl font-bold bg-gradient-to-r from-[#06b6d4] to-[#ec4899] bg-clip-text text-transparent">100M+</div>
+                <div className="text-sm text-muted-foreground mt-2">Records Processed</div>
+              </Card>
+              <Card className="p-6 border-border bg-card/50 backdrop-blur">
+                <div className="text-3xl font-bold bg-gradient-to-r from-[#ec4899] to-[#06b6d4] bg-clip-text text-transparent">25+</div>
+                <div className="text-sm text-muted-foreground mt-2">Tools Mastered</div>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 border-b border-border">
+      <section id="about" className="py-20 border-b border-border">
         <div className="container">
-          <div className="grid lg:grid-cols-12 gap-16">
-            <div className="lg:col-span-4">
-              <h2 className="font-display text-4xl font-bold mb-4 bg-gradient-to-r from-[#ec4899] to-[#a469d5] bg-clip-text text-transparent">About Me</h2>
-              <div className="h-1 w-16 bg-gradient-to-r from-[#ec4899] via-[#a469d5] to-[#06b6d4] mb-6 rounded-full"></div>
-              <p className="text-muted-foreground leading-relaxed">
-                Data enthusiast with expertise in building scalable data pipelines, predictive models, and analytics solutions. Passionate about transforming complex data into actionable insights.
-              </p>
+          <h2 className="font-display text-4xl font-bold mb-12">Technical Expertise</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                <Brain className="w-5 h-5 text-[#ec4899]" />
+                Data Science & ML
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {["Python", "TensorFlow", "Keras", "Scikit-learn", "Deep Learning", "NLP"].map(skill => (
+                  <Badge key={skill} variant="secondary">{skill}</Badge>
+                ))}
+              </div>
             </div>
-            <div className="lg:col-span-8">
-              <div className="space-y-8">
-                <div>
-                  <h3 className="font-display text-2xl font-semibold mb-4 text-accent">Technical Expertise</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.map((skill) => (
-                      <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm bg-accent/20 text-accent hover:bg-accent/30 border-accent/50">
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-                <div className="h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
-                <div>
-                  <h3 className="font-display text-2xl font-semibold mb-4 text-accent">Core Competencies</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2 p-4 rounded-lg bg-card/50 border border-accent/20">
-                      <div className="font-semibold text-foreground flex items-center gap-2">
-                        <Zap className="h-4 w-4 text-[#f97316]" />
-                        Data Engineering
-                      </div>
-                      <p className="text-sm text-muted-foreground">
-                        Building scalable ETL/ELT pipelines with Python, SQL, and cloud platforms (AWS, Azure, Snowflake).
-                      </p>
-                    </div>
-                    <div className="space-y-2 p-4 rounded-lg bg-card/50 border border-accent/20">
-                      <div className="font-semibold text-foreground flex items-center gap-2">
-                        <BarChart3 className="h-4 w-4 text-[#ec4899]" />
-                        Analytics & Visualization
-                      </div>
-                      <p className="text-sm text-muted-foreground">
-                        Creating interactive dashboards with Tableau and Looker for data-driven decision making.
-                      </p>
-                    </div>
-                    <div className="space-y-2 p-4 rounded-lg bg-card/50 border border-accent/20">
-                      <div className="font-semibold text-foreground flex items-center gap-2">
-                        <Brain className="h-4 w-4 text-[#a469d5]" />
-                        Machine Learning
-                      </div>
-                      <p className="text-sm text-muted-foreground">
-                        Developing predictive models and time-series forecasting using TensorFlow, scikit-learn, and XGBoost.
-                      </p>
-                    </div>
-                    <div className="space-y-2 p-4 rounded-lg bg-card/50 border border-accent/20">
-                      <div className="font-semibold text-foreground flex items-center gap-2">
-                        <Workflow className="h-4 w-4 text-[#06b6d4]" />
-                        Automation & DevOps
-                      </div>
-                      <p className="text-sm text-muted-foreground">
-                        Designing automated workflows with n8n, Airflow, and CI/CD pipelines using GitHub Actions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                <BarChart3 className="w-5 h-5 text-[#a469d5]" />
+                Analytics & BI
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {["Tableau", "Looker", "Power BI", "SQL", "DuckDB", "Analytics"].map(skill => (
+                  <Badge key={skill} variant="secondary">{skill}</Badge>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                <Zap className="w-5 h-5 text-[#06b6d4]" />
+                Data Engineering
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {["Snowflake", "Airflow", "ETL/ELT", "AWS", "Azure", "CI/CD"].map(skill => (
+                  <Badge key={skill} variant="secondary">{skill}</Badge>
+                ))}
               </div>
             </div>
           </div>
@@ -260,148 +207,76 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 border-b border-border">
+      <section id="projects" className="py-20 border-b border-border">
         <div className="container">
-          <div className="mb-16">
-            <h2 className="font-display text-4xl font-bold mb-4 bg-gradient-to-r from-[#ec4899] to-[#a469d5] bg-clip-text text-transparent">Featured Projects</h2>
-            <div className="h-1 w-16 bg-gradient-to-r from-[#ec4899] via-[#a469d5] to-[#06b6d4] mb-6 rounded-full"></div>
-            <p className="text-muted-foreground max-w-2xl">
-              A selection of data engineering, analytics, and machine learning projects showcasing end-to-end solutions.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {projects.map((project, index) => {
-              const Icon = project.icon;
-              const gradients = [
-                'from-[#ec4899] to-[#f97316]',
-                'from-[#a469d5] to-[#06b6d4]',
-                'from-[#06b6d4] to-[#a469d5]',
-                'from-[#f97316] to-[#ec4899]',
-                'from-[#ec4899] to-[#a469d5]'
-              ];
-              const gradient = gradients[index % gradients.length];
-              
-              return (
-                <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border-accent/30 bg-card/50 backdrop-blur hover:border-accent/60">
-                  <div className="aspect-video overflow-hidden bg-muted relative">
-                    <img 
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <div className="p-6 space-y-4">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <div className={`flex items-center gap-2 text-sm mb-2 bg-gradient-to-r ${gradient} bg-clip-text text-transparent font-semibold`}>
-                          <Icon className="h-4 w-4 text-accent" />
-                          {project.type}
-                        </div>
-                        <h3 className="font-display text-xl font-semibold text-foreground">{project.title}</h3>
-                      </div>
+          <h2 className="font-display text-4xl font-bold mb-12">Featured Projects</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {projects.map((project, idx) => (
+              <Card key={idx} className="overflow-hidden border-border hover:border-accent transition-colors group">
+                <div className="aspect-video overflow-hidden bg-muted">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="font-semibold text-lg">{project.title}</h3>
+                      <p className="text-xs text-muted-foreground">{project.type}</p>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <Badge key={tag} variant="outline" className="text-xs bg-accent/10 text-accent border-accent/30 hover:bg-accent/20">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <Button 
-                      asChild={project.link !== '#'}
-                      disabled={project.link === '#'}
-                      className={`w-full gap-2 ${project.link !== '#' ? 'bg-gradient-to-r from-[#ec4899] to-[#a469d5] hover:from-[#f472b6] hover:to-[#c084fc] text-white border-0' : 'bg-muted text-muted-foreground cursor-not-allowed'} transition-all`}
-                    >
-                      {project.link !== '#' ? (
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 w-full">
-                          View Project
-                          <ExternalLink className="h-4 w-4" />
-                        </a>
-                      ) : (
-                        <>
-                          Coming Soon
-                          <ExternalLink className="h-4 w-4" />
-                        </>
-                      )}
-                    </Button>
+                    <project.icon className="w-5 h-5 text-accent flex-shrink-0" />
                   </div>
-                </Card>
-              );
-            })}
+                  <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map(tag => (
+                      <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
+                    ))}
+                  </div>
+                  {project.link !== "#" && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button variant="default" size="sm" className="w-full gap-2">
+                        View Project
+                        <ExternalLink className="w-4 h-4" />
+                      </Button>
+                    </a>
+                  )}
+                </div>
+              </Card>
+            ))}
           </div>
-
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <div>
-              <h2 className="font-display text-4xl font-bold mb-4 bg-gradient-to-r from-[#ec4899] to-[#a469d5] bg-clip-text text-transparent">Let's Connect</h2>
-              <div className="h-1 w-16 bg-gradient-to-r from-[#ec4899] via-[#a469d5] to-[#06b6d4] mx-auto mb-6 rounded-full"></div>
-              <p className="text-muted-foreground text-lg">
-                Open to collaboration, consulting, or discussing data engineering and analytics challenges.
-              </p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button 
-                asChild
-                size="lg" 
-                variant="outline" 
-                className="gap-2 border-accent hover:bg-accent/10"
-              >
-                <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5" />
-                  GitHub
-                </a>
+      <section id="contact" className="py-20">
+        <div className="container text-center">
+          <h2 className="font-display text-4xl font-bold mb-6">Let's Connect</h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Interested in collaborating or discussing data projects? Reach out via email or connect on LinkedIn.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="mailto:aditi.neema@email.com">
+              <Button size="lg" className="gap-2">
+                <Mail className="w-5 h-5" />
+                +1 (332) 699-0337
               </Button>
-              <Button 
-                asChild
-                size="lg" 
-                variant="outline" 
-                className="gap-2 border-accent hover:bg-accent/10"
-              >
-                <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="h-5 w-5" />
-                  LinkedIn
-                </a>
+            </a>
+            <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="gap-2">
+                <Linkedin className="w-5 h-5" />
+                LinkedIn Profile
               </Button>
-              <Button 
-                asChild
-                size="lg" 
-                className="gap-2 bg-gradient-to-r from-[#ec4899] to-[#a469d5] hover:from-[#f472b6] hover:to-[#c084fc] text-white border-0"
-              >
-                <a href="mailto:aneema099@gmail.com">
-                  <Mail className="h-5 w-5" />
-                  Email Me
-                </a>
-              </Button>
-            </div>
-            <div className="pt-8 border-t border-border">
-              <p className="text-muted-foreground text-sm">
-                📱 +1 (332) 699-0337 | 📧 aneema099@gmail.com
-              </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="font-display font-semibold bg-gradient-to-r from-[#ec4899] via-[#a469d5] to-[#06b6d4] bg-clip-text text-transparent">
-              Aditi Neema
-            </div>
-            <div className="text-sm text-muted-foreground">
-              © 2026 All rights reserved
-            </div>
-          </div>
+      <footer className="border-t border-border py-8 bg-card/50">
+        <div className="container text-center text-sm text-muted-foreground">
+          <p>© 2026 Aditi Neema. All rights reserved.</p>
         </div>
       </footer>
     </div>
