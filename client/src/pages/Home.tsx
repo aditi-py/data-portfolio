@@ -203,6 +203,19 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="mt-8">
+            <div>
+              <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                <Workflow className="w-5 h-5 text-[#ec4899]" />
+                Workflow Automation & AI Integration
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {["n8n", "OpenAI API", "LLM-based Text Classification", "Automated Risk Scoring Pipelines"].map(skill => (
+                  <Badge key={skill} variant="secondary">{skill}</Badge>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
