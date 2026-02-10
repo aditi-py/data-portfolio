@@ -53,27 +53,74 @@ export default function MilkyWayBackground() {
     const animate = () => {
       time += 1;
 
-      // Create gradient background
+      // Create gradient background with Milky Way colors
       const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
       gradient.addColorStop(0, '#0a0e27');
-      gradient.addColorStop(0.5, '#1a1f3a');
+      gradient.addColorStop(0.25, '#1a0f3a');
+      gradient.addColorStop(0.5, '#2a1a4a');
+      gradient.addColorStop(0.75, '#1a2a4a');
       gradient.addColorStop(1, '#0f1428');
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Add subtle nebula clouds
-      for (let i = 0; i < 3; i++) {
+      // Add radial color gradients for nebula effect - Purple nebula
+      const nebula1 = ctx.createRadialGradient(
+        canvas.width * 0.3 + Math.sin(time * 0.00008) * 100,
+        canvas.height * 0.3 + Math.cos(time * 0.00006) * 100,
+        0,
+        canvas.width * 0.3,
+        canvas.height * 0.3,
+        500
+      );
+      nebula1.addColorStop(0, 'rgba(200, 100, 255, 0.15)');
+      nebula1.addColorStop(0.5, 'rgba(150, 80, 220, 0.08)');
+      nebula1.addColorStop(1, 'rgba(100, 50, 180, 0)');
+      ctx.fillStyle = nebula1;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Blue nebula
+      const nebula2 = ctx.createRadialGradient(
+        canvas.width * 0.7 + Math.sin(time * 0.00006) * 80,
+        canvas.height * 0.5 + Math.cos(time * 0.00008) * 80,
+        0,
+        canvas.width * 0.7,
+        canvas.height * 0.5,
+        400
+      );
+      nebula2.addColorStop(0, 'rgba(100, 200, 255, 0.12)');
+      nebula2.addColorStop(0.5, 'rgba(80, 150, 220, 0.06)');
+      nebula2.addColorStop(1, 'rgba(50, 100, 180, 0)');
+      ctx.fillStyle = nebula2;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Pink/Magenta nebula
+      const nebula3 = ctx.createRadialGradient(
+        canvas.width * 0.5 + Math.sin(time * 0.00007) * 120,
+        canvas.height * 0.7 + Math.cos(time * 0.00005) * 120,
+        0,
+        canvas.width * 0.5,
+        canvas.height * 0.7,
+        450
+      );
+      nebula3.addColorStop(0, 'rgba(255, 100, 200, 0.1)');
+      nebula3.addColorStop(0.5, 'rgba(220, 80, 180, 0.05)');
+      nebula3.addColorStop(1, 'rgba(180, 50, 150, 0)');
+      ctx.fillStyle = nebula3;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Add additional subtle nebula clouds for depth
+      for (let i = 0; i < 2; i++) {
         const nebula = ctx.createRadialGradient(
-          canvas.width * (0.3 + i * 0.2) + Math.sin(time * 0.0001 + i) * 50,
-          canvas.height * (0.4 + i * 0.15) + Math.cos(time * 0.00008 + i) * 50,
+          canvas.width * (0.2 + i * 0.6) + Math.sin(time * 0.00009 + i) * 60,
+          canvas.height * (0.5 + i * 0.2) + Math.cos(time * 0.00007 + i) * 60,
           0,
-          canvas.width * (0.3 + i * 0.2),
-          canvas.height * (0.4 + i * 0.15),
-          300
+          canvas.width * (0.2 + i * 0.6),
+          canvas.height * (0.5 + i * 0.2),
+          350
         );
-        nebula.addColorStop(0, `rgba(106, 90, 205, ${0.03 + i * 0.01})`);
-        nebula.addColorStop(0.5, `rgba(72, 52, 212, ${0.01 + i * 0.005})`);
-        nebula.addColorStop(1, 'rgba(72, 52, 212, 0)');
+        nebula.addColorStop(0, `rgba(150, 100, 255, ${0.04 + i * 0.02})`);
+        nebula.addColorStop(0.5, `rgba(100, 70, 200, ${0.02 + i * 0.01})`);
+        nebula.addColorStop(1, 'rgba(80, 50, 180, 0)');
         ctx.fillStyle = nebula;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
@@ -104,31 +151,60 @@ export default function MilkyWayBackground() {
         const y = (star.y - canvas.height / 2) * scale + canvas.height / 2;
         const size = star.size * scale;
 
-        // Draw star with twinkling effect
+        // Draw star with twinkling effect and color variation
         const twinkle = Math.sin(time * 0.01 + star.x + star.y) * 0.3 + 0.7;
-        ctx.fillStyle = `rgba(200, 220, 255, ${star.opacity * twinkle})`;
+        const colorVariation = Math.sin(star.x * 0.01 + star.y * 0.01) * 0.5 + 0.5;
+
+        let starColor = 'rgba(200, 220, 255, ';
+        if (colorVariation < 0.33) {
+          starColor = 'rgba(200, 150, 255, '; // Purple stars
+        } else if (colorVariation < 0.66) {
+          starColor = 'rgba(150, 200, 255, '; // Blue stars
+        } else {
+          starColor = 'rgba(200, 220, 255, '; // White stars
+        }
+
+        ctx.fillStyle = starColor + (star.opacity * twinkle) + ')';
         ctx.beginPath();
         ctx.arc(x, y, size, 0, Math.PI * 2);
         ctx.fill();
 
         // Add glow for brighter stars
         if (star.size > 0.8) {
-          ctx.fillStyle = `rgba(150, 200, 255, ${star.opacity * twinkle * 0.3})`;
+          ctx.fillStyle = starColor + (star.opacity * twinkle * 0.3) + ')';
           ctx.beginPath();
           ctx.arc(x, y, size * 2.5, 0, Math.PI * 2);
           ctx.fill();
         }
       });
 
-      // Add subtle milky way band
-      ctx.strokeStyle = 'rgba(100, 150, 255, 0.08)';
-      ctx.lineWidth = 150;
+      // Add vibrant milky way band with gradient
+      const milkyWayGradient = ctx.createLinearGradient(0, canvas.height * 0.3, 0, canvas.height * 0.7);
+      milkyWayGradient.addColorStop(0, 'rgba(150, 100, 255, 0.15)');
+      milkyWayGradient.addColorStop(0.3, 'rgba(100, 200, 255, 0.2)');
+      milkyWayGradient.addColorStop(0.5, 'rgba(100, 150, 255, 0.25)');
+      milkyWayGradient.addColorStop(0.7, 'rgba(200, 100, 200, 0.15)');
+      milkyWayGradient.addColorStop(1, 'rgba(150, 80, 200, 0.1)');
+      ctx.strokeStyle = milkyWayGradient;
+      ctx.lineWidth = 200;
       ctx.beginPath();
       ctx.quadraticCurveTo(
         canvas.width * 0.25 + Math.sin(time * 0.00005) * 100,
         canvas.height * 0.3,
         canvas.width * 0.75,
         canvas.height * 0.7
+      );
+      ctx.stroke();
+
+      // Add secondary milky way band
+      ctx.strokeStyle = 'rgba(100, 180, 255, 0.1)';
+      ctx.lineWidth = 100;
+      ctx.beginPath();
+      ctx.quadraticCurveTo(
+        canvas.width * 0.3 + Math.sin(time * 0.00004) * 80,
+        canvas.height * 0.4,
+        canvas.width * 0.8,
+        canvas.height * 0.6
       );
       ctx.stroke();
 
