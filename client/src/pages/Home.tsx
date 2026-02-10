@@ -15,7 +15,7 @@ export default function Home() {
     "Python", "SQL", "PySpark", "R", "Tableau", "Looker", "Power BI",
     "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "Keras",
     "PostgreSQL", "MySQL", "Snowflake", "Redshift", "Azure", "AWS",
-    "Airflow", "ETL/ELT", "Git", "GitHub Actions", "CI/CD"
+    "Airflow", "ETL/ELT", "Git", "GitHub Actions", "CI/CD", "Docker"
   ];
 
   const projects = [
@@ -38,15 +38,6 @@ export default function Home() {
       image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-4_1770760204000_na1fn_Z2xvYmFsLWhlYWx0aC1lcXVpdHktZW5oYW5jZWQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTRfMTc3MDc2MDIwNDAwMF9uYTFmbl9aMnh2WW1Gc0xXaGxZV3gwYUMxbGNYVnBkSGt0Wlc1b1lXNWpaV1EucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=GlSrnIWXLaICWWGzQqMW5JoNbZBiFkIwbSqO3i2vMeymbw3dGYPIf4UrMia13sxf62H3wJN1LcyCgDOL1vCy~E7UZkbvF~cXz2h4UuQmrDhT0t1vEy-AwgO2OFUxFTRrwQd3DXZJl1BJ8-A0XMYI4AF0uQ3sXqvcgVaqVL5~gNqI0M0nEBPEVfzJGZi4DHW5rbeSJHdFfr6XJhbE2XtX3Ewjs6mKp8FvuKCFLnu6k-OauKJF5Z29LInloIVPooxV~4EFlyf7F8aOpzNif27NMPozu8xNoQJmzCPBeBc~Gm33qxtE2z2CB8624oiyhA0gX5dPI5Ap-GyVIqb7neQ__"
     },
     {
-      title: "Clustering for Customer Segmentation",
-      description: "Data analysis project computing correlation matrices and heatmap visualizations to identify relationships between variables. Supports data-driven customer segmentation and decision-making through statistical analysis.",
-      type: "Data Analysis",
-      icon: BarChart3,
-      tags: ["Python", "Pandas", "Seaborn", "Matplotlib", "Statistics"],
-      link: "https://github.com/aditi-py/Clustering-for-Customer-Segmentation",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-5_1770760207000_na1fn_Y3VzdG9tZXItY2x1c3RlcmluZy1lbmhhbmNlZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTVfMTc3MDc2MDIwNzAwMF9uYTFmbl9ZM1Z6ZEc5dFpYSXRZMngxYzNSbGNtbHVaeTFsYm1oaGJtTmxaQS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=FarEAZugGGYhb82YNBMe1KrbPYuWJowMF~xiOp7wnPEJs2CymVCtZy9OYBtsoT0SGV0qrskuioyWX85uU1UItnsjFDj6e5eLX3tfuMbMjVl0wBHP~5KgOa30UNgpKFDZiyZAVLwt0lbdpn-iab7HIwsVjMSZprU~Su8KQTyUfa5~33GqoxbzUvSiNF4Te3ViNQijOS58ympeX~QF0nEnI9LTaZTb6kAQ8XeeZRkOT8EHmTdCWMaSmf-q1QCfwf3uxpa5avZHiqeA1gUJNBzK~JHSVGZehpM2X2jNkn9HQVfi3q3CVO1QK5agRq53ZnZ6dpHhj~C6GR4N14orL3qPYQ__"
-    },
-    {
       title: "Insurance Policy Cancellation Prediction",
       description: "Multiclass predictive model analyzing 1M+ insurance policies from the Kangaroo dataset (2013-2017). Built feature engineering pipeline to predict cancellation likelihood, identifying that coverage type C had highest dissatisfaction with 35K+ cancellations.",
       type: "Predictive Analytics",
@@ -57,21 +48,21 @@ export default function Home() {
     },
     {
       title: "UFC Looker Dashboard",
-      description: "Designed and deployed Snowflake ETL pipeline processing 15K+ UFC records using Python and SQL with dimensional modeling. Implemented data quality framework and performance optimization including weight class standardization.",
+      description: "Designed and deployed Snowflake ETL pipeline processing 15K+ UFC records using Python and SQL with dimensional modeling. Implemented data quality framework and performance optimization including weight class standardization. Interactive Looker dashboard with fighter statistics, match outcomes, and regional performance analysis.",
       type: "Dashboard & Analytics",
       icon: BarChart3,
       tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
-      link: "#",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/NJA5yEZyGdlBas5LQJBe2a-img-4_1770757502000_na1fn_dWZjLWRhc2hib2FyZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L05KQTV5RVp5R2RsQmFzNUxRSkJlMmEtaW1nLTRfMTc3MDc1NzUwMjAwMF9uYTFmbl9kV1pqTFdSaGMyaGliMkZ5WkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=EDXapXqW~23FhnsZZinX4aCt6nRmGlriBBGNl3JqsOU0R7xy4lE0AVFiiaXQv-BTsxZH3lIt202oHddrF6DiRFrA4jxa5H50qcUmeHhZcuX6TGqP633affhctUCJHpycY4ZVouqABT47uMnCIBEfCBEzRvyzQIt7vQEaCmtalptidrkYX6LRsNo4YbLGAw~PEEze4TegQkuvzAdxM8th6RcucVyVXqSVQsjTQPRI~Kvj~7xwMoRe3kVH3HXver3nUXxrwwIYAhN0xFZzNvE1Uwy64XpNTSAqHvpu8i0MFP8wXmD0OK5fcS1eBUFCjqLecUREVqczvTIDKm4-zlXlPA__"
+      link: "https://lookerstudio.google.com/reporting/d7df433e-bdbe-4bf6-97cc-f053e90c562e",
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/bdw5gxveaR7pFi0VRLQEEc-img-1_1770761106000_na1fn_dWZjLWxvb2tlci1kYXNoYm9hcmQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L2JkdzVneHZlYVI3cEZpMFZSTFFFRWMtaW1nLTFfMTc3MDc2MTEwNjAwMF9uYTFmbl9kV1pqTFd4dmIydGxjaTFrWVhOb1ltOWhjbVEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=HVJJA0s~Hs2KWNKs81NQhDICWe498fjMd~OJWrK0E~Q9VPL-7p5X6yHOSOMKk2s3J213COk6ie~hCW9qeINAwrZ3CKZyrT9HV614oGIrKxKJqShU5rkY4XRveq2XO01cXt7wMQM-ygyXe5bpdRHTm38Q8YfqXwhsF4WbYZRzzU~DfvvCSByvJRWdGIP6y2vYIepto4Hnj7qYLZbb~SIzYZMMuB~qbHnWMbLKIlUWtk3E7u45udUJxUwhObDvDc6VvcfS5z6Xl7Gmhd01mG3VsMxOR2bfmQdfXNEI~CFT7Ex7N6cS-UyJhXlcBcZeDLuJwOk~ZUOzcEbbO6IOqDqebQ__"
     },
     {
       title: "Crisis Tracking Automation (Coming Soon)",
-      description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights.",
+      description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights. Will be containerized with Docker for scalable deployment.",
       type: "Workflow Automation",
       icon: Workflow,
-      tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Automation"],
+      tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Docker", "Automation"],
       link: "#",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-1_1770760205000_na1fn_Y3Jpc2lzLXRyYWNrZXItYXV0b21hdGlvbg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTFfMTc3MDc2MDIwNTAwMF9uYTFmbl9ZM0pwYzJsekxYUnlZV05yWlhJdFlYVjBiMjFoZEdsdmJnLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=MBkW965ym~QQIoz9vK~hTG6tKcpqIlUyQGw~XHB57F54LEup1k-iaEb0Z2JpT8elGvN9c-rhxJ4HUrl-gVWruMdCo6tsV6ywHRqbF6RyyvEoF2LUyWkuDSl2CYdp0N-xERolRvQ7Y-mon4DBwUvnzKuMzf9mo39ortLWCX-rm7vFTWDpU9R4g51yWngAUrcRDY6AqTPWlJObc9PqRbUJQDYQsMKigrXkaMhTWlxwtDxHkdFIZ9wWeK~SwqiOoREc-PJ6LVUJVA9p3PPc19QXkfEuuofICNYePM4hYF7QlHgdfMcqBPkhZrUXAc6Sl6Cp5EPjY8yt81sp3-aWjP6JZQ__"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/bdw5gxveaR7pFi0VRLQEEc-img-2_1770761095000_na1fn_Y3Jpc2lzLXRyYWNraW5nLWxvY2tlZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L2JkdzVneHZlYVI3cEZpMFZSTFFFRWMtaW1nLTJfMTc3MDc2MTA5NTAwMF9uYTFmbl9ZM0pwYzJsekxYUnlZV05yYVc1bkxXeHZZMnRsWkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Ncql5xmWJpi0U-rCXKf3NvmV66CrXyv9ZxlDRShWQilf-sK-zVAN74PobGTtBuQNZo6HU8XYFP9VQE~-SYIXJeA9NbwnQeu62hl2eU4oHmegXZZ5Dl9KpzWqlnpuM3LvoVOnyLky48-HBS1HrSKtOJtHT~TL-HbWHX~j~K0bKLsmV6AEwDbKJggO09ORj4ky7d3mm1CnHODPcu0FBC~u3JO0gaQN~VQtRLjz1aTUJkd8Q2K4qqbXbzuOIOOJ3dqhZC9zd7VineR81rRDbFfqj3yRoVxtJjKtXZf2giP6cCLrb-vlgF4V~mxV6CF6j69NcQHdQGWC~bbjB7djyH9PZg__"
     },
     {
       title: "Tableau Public Dashboards",
