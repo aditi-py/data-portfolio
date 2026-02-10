@@ -110,13 +110,35 @@ export default function Home() {
       {/* SECTION 1: ABOUT & JOURNEY */}
       <section id="about" className="relative py-24 md:py-32 border-b border-border/50">
         <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
-              Data Engineer & Analyst
-            </h1>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              4+ years transforming legacy systems into modern, automated data solutions. Specializing in scalable pipelines, predictive models, and data-driven insights that drive business impact.
-            </p>
+          <div className="grid md:grid-cols-3 gap-12 items-start mb-12">
+            {/* Profile Card */}
+            <div className="md:col-span-1">
+              <Card className="overflow-hidden bg-card/50 border-border/50 sticky top-24">
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/NKdUtdZiqdsNopfb.jpg" 
+                    alt="Aditi Neema" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="font-display text-2xl font-bold mb-2">Aditi Neema</h2>
+                  <p className="text-sm text-accent font-semibold mb-3">Data Engineer & Analyst</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Passionate about transforming complex data into actionable insights. Specializing in building scalable data pipelines, predictive models, and automation workflows that drive measurable business impact.
+                  </p>
+                </div>
+              </Card>
+            </div>
+
+            {/* Content */}
+            <div className="md:col-span-2">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                Data Engineer & Analyst
+              </h1>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                4+ years transforming legacy systems into modern, automated data solutions. Specializing in scalable pipelines, predictive models, and data-driven insights that drive business impact.
+              </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
               <Card className="p-4 bg-card/50 border-border/50">
@@ -137,19 +159,20 @@ export default function Home() {
               </Card>
             </div>
 
-            <div className="flex gap-4">
-              <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
-                <Button variant="default" size="lg" className="gap-2">
-                  <Github className="w-5 h-5" />
-                  View GitHub
-                </Button>
-              </a>
-              <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="lg" className="gap-2">
-                  <Linkedin className="w-5 h-5" />
-                  LinkedIn
-                </Button>
-              </a>
+              <div className="flex gap-4">
+                <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
+                  <Button variant="default" size="lg" className="gap-2">
+                    <Github className="w-5 h-5" />
+                    View GitHub
+                  </Button>
+                </a>
+                <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="lg" className="gap-2">
+                    <Linkedin className="w-5 h-5" />
+                    LinkedIn
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
