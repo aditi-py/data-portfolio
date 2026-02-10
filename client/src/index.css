@@ -41,58 +41,58 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  /* Swiss Modernist Typography System */
+  /* Vibrant Constellation Typography System */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 :root {
-  /* Swiss Modernist Color Palette - Data-driven accents */
-  --primary: oklch(0.51 0.177 264.365); /* Deep blue #2563eb */
-  --primary-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.51 0.177 264.365);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
+  /* Vibrant Constellation Palette - Poppy & Cosmic */
+  --primary: oklch(0.65 0.25 290); /* Electric purple */
+  --primary-foreground: oklch(0.98 0.01 0);
+  --sidebar-primary: oklch(0.65 0.25 290);
+  --sidebar-primary-foreground: oklch(0.98 0.01 0);
   
-  /* Data visualization accent colors */
-  --chart-1: oklch(0.51 0.177 264.365); /* Deep blue */
-  --chart-2: oklch(0.67 0.169 28.364); /* Coral #f97316 */
-  --chart-3: oklch(0.70 0.131 180.723); /* Teal #14b8a6 */
-  --chart-4: oklch(0.62 0.204 293.267); /* Violet #8b5cf6 */
-  --chart-5: oklch(0.45 0.15 264.365); /* Darker blue */
+  /* Vibrant data visualization accent colors */
+  --chart-1: oklch(0.65 0.25 290); /* Electric purple */
+  --chart-2: oklch(0.72 0.28 15); /* Hot pink/magenta */
+  --chart-3: oklch(0.68 0.27 180); /* Bright teal */
+  --chart-4: oklch(0.70 0.26 40); /* Vivid orange */
+  --chart-5: oklch(0.60 0.22 320); /* Deep magenta */
   
-  --radius: 2px; /* Minimal radius for Swiss precision */
+  --radius: 8px; /* Slightly rounded for modern feel */
   
-  /* Warm off-white background with deep charcoal text */
-  --background: oklch(0.985 0.002 85.873); /* #fafaf8 */
-  --foreground: oklch(0.25 0.005 285.885); /* #1a1a1a */
-  --card: oklch(1 0 0); /* Pure white cards */
-  --card-foreground: oklch(0.25 0.005 285.885);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.005 285.885);
+  /* Cosmic background with vibrant text */
+  --background: oklch(0.12 0.02 280); /* Deep cosmic blue-purple */
+  --foreground: oklch(0.95 0.01 0); /* Near white */
+  --card: oklch(0.18 0.03 280); /* Slightly lighter cosmic */
+  --card-foreground: oklch(0.95 0.01 0);
+  --popover: oklch(0.18 0.03 280);
+  --popover-foreground: oklch(0.95 0.01 0);
   
-  /* Subtle grays for hierarchy */
-  --secondary: oklch(0.96 0.002 286.375);
-  --secondary-foreground: oklch(0.35 0.015 285.885);
-  --muted: oklch(0.94 0.002 286.375);
-  --muted-foreground: oklch(0.50 0.016 285.938);
-  --accent: oklch(0.96 0.002 286.375);
-  --accent-foreground: oklch(0.25 0.005 285.885);
+  /* Vibrant accent palette */
+  --secondary: oklch(0.72 0.28 15); /* Hot pink */
+  --secondary-foreground: oklch(0.12 0.02 280);
+  --muted: oklch(0.25 0.04 280);
+  --muted-foreground: oklch(0.70 0.08 0);
+  --accent: oklch(0.68 0.27 180); /* Bright teal */
+  --accent-foreground: oklch(0.12 0.02 280);
   
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.65 0.25 25);
+  --destructive-foreground: oklch(0.98 0.01 0);
   
-  /* Hairline borders */
-  --border: oklch(0.88 0.004 286.32);
-  --input: oklch(0.88 0.004 286.32);
-  --ring: oklch(0.51 0.177 264.365);
+  /* Vibrant borders */
+  --border: oklch(0.30 0.05 280);
+  --input: oklch(0.25 0.04 280);
+  --ring: oklch(0.72 0.28 15);
   
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.25 0.005 285.885);
-  --sidebar-accent: oklch(0.96 0.002 286.375);
-  --sidebar-accent-foreground: oklch(0.25 0.005 285.885);
-  --sidebar-border: oklch(0.88 0.004 286.32);
-  --sidebar-ring: oklch(0.51 0.177 264.365);
+  --sidebar: oklch(0.18 0.03 280);
+  --sidebar-foreground: oklch(0.95 0.01 0);
+  --sidebar-accent: oklch(0.72 0.28 15);
+  --sidebar-accent-foreground: oklch(0.12 0.02 280);
+  --sidebar-border: oklch(0.30 0.05 280);
+  --sidebar-ring: oklch(0.72 0.28 15);
 }
 
 @layer base {
@@ -131,10 +131,10 @@
 
 @layer components {
   /**
-   * Swiss Modernist Design System
-   * Mathematical precision in spacing and alignment
-   * Grid systems as visible design elements
-   * Clarity and legibility above all
+   * Vibrant Constellation Design System
+   * Poppy colors with cosmic dark background
+   * Star/constellation visual elements
+   * Modern, eye-catching aesthetic
    */
   .container {
     width: 100%;
@@ -164,9 +164,31 @@
     }
   }
   
-  /* Hairline rule separator */
-  .hairline {
-    height: 1px;
-    background-color: var(--border);
+  /* Constellation star element */
+  .star {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 50%;
+    animation: twinkle 3s infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  /* Glow effect for vibrant accent */
+  .glow-accent {
+    box-shadow: 0 0 20px rgba(230, 126, 34, 0.3), 0 0 40px rgba(230, 126, 34, 0.1);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(165, 105, 213, 0.3), 0 0 40px rgba(165, 105, 213, 0.1);
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.3), 0 0 40px rgba(236, 72, 153, 0.1);
   }
 }
