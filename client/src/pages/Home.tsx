@@ -250,10 +250,10 @@ export default function Home() {
                   aneema099@gmail.com
                 </Button>
               </a>
-              <a href="tel:+13326990337">
+              <a href="tel:+14084625759">
                 <Button variant="outline" size="lg" className="gap-2">
                   <Phone className="w-5 h-5" />
-                  +1 (332) 699-0337
+                  +1 (408) 462-5759
                 </Button>
               </a>
               <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
