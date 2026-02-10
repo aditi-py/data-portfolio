@@ -244,10 +244,10 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a href="mailto:aditi@example.com">
+              <a href="mailto:aneema099@gmail.com">
                 <Button size="lg" className="gap-2">
                   <Mail className="w-5 h-5" />
-                  Email Me
+                  aneema099@gmail.com
                 </Button>
               </a>
               <a href="tel:+13326990337">
