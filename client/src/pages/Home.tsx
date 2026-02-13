@@ -26,7 +26,7 @@ export default function Home() {
       icon: Brain,
       tags: ["Python", "TensorFlow", "Keras", "Deep Learning", "NLP"],
       link: "https://github.com/aditi-py/AI-Generated-Text-Detection",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-3_1770760199000_na1fn_YWktdGV4dC1kZXRlY3Rpb24tZW5oYW5jZWQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTNfMTc3MDc2MDE5OTAwMF9uYTFmbl9ZV2t0ZEdWNGRDMWtaWFJsWTNScGIyNHRaVzVvWVc1alpXUS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=IUkV4sCoB6gt-Ma-YQmejBlY36heBfj9dZIAIEyzSuhHXyBnkLLQJ1ZvEjj3NV-1mMcHMNvBMixnctYwXDXrwJIf3QSjhq4fn5o1JsaHay~z3~PC4JKh8eYPDvRp1-zxz1Jn9SMBauWv0jXhGBSc-MAQSl-3pn26qH-jL7EC99fs21wYw0cCaYrU1y5hf-wLNDxw9fV6VMgtbTcn-zx9IpisSv0bkXRBmgyQRnJyNYjeHfYnZPd1ViyeswC-~KyDFeVyORzeLizO-ekXBH95hLCFINvyneqpfAnfdvNKt03Ld~lZIHrhh6l0lBfiqG9px4soRRMS~Yy0iCT4nOHoNw__"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/hVHHOxydSkVxgfiE.png"
     },
     {
       title: "Global Health Equity Analysis",
