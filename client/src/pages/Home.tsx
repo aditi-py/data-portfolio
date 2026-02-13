@@ -35,7 +35,7 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Python", "Pandas", "DuckDB", "Matplotlib", "Data Visualization"],
       link: "https://github.com/aditi-py/Global-Health-Equity-Analysis-Geographic-Economic-Distribution-Study",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-4_1770760204000_na1fn_Z2xvYmFsLWhlYWx0aC1lcXVpdHktZW5oYW5jZWQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTRfMTc3MDc2MDIwNDAwMF9uYTFmbl9aMnh2WW1Gc0xXaGxZV3gwYUMxbGNYVnBkSGt0Wlc1b1lXNWpaV1EucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=GlSrnIWXLaICWWGzQqMW5JoNbZBiFkIwbSqO3i2vMeymbw3dGYPIf4UrMia13sxf62H3wJN1LcyCgDOL1vCy~E7UZkbvF~cXz2h4UuQmrDhT0t1vEy-AwgO2OFUxFTRrwQd3DXZJl1BJ8-A0XMYI4AF0uQ3sXqvcgVaqVL5~gNqI0M0nEBPEVfzJGZi4DHW5rbeSJHdFfr6XJhbE2XtX3Ewjs6mKp8FvuKCFLnu6k-OauKJF5Z29LInloIVPooxV~4EFlyf7F8aOpzNif27NMPozu8xNoQJmzCPBeBc~Gm33qxtE2z2CB8624oiyhA0gX5dPI5Ap-GyVIqb7neQ__"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/qDOOdUErgGFhxEDT.png"
     },
     {
       title: "Insurance Policy Cancellation Prediction",
