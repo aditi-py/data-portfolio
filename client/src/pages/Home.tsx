@@ -44,7 +44,7 @@ export default function Home() {
       icon: Brain,
       tags: ["Python", "Scikit-learn", "Feature Engineering", "Classification", "Data Mining"],
       link: "https://github.com/aditi-py/Policy-Cancelations",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/ZjqhaWylQbQKkRbY.png"
+      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/SlxILljGuahBXZrdO2lVYd-img-2_1770757547000_na1fn_cG9saWN5LWNhbmNlbGxhdGlvbnM.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L1NseElMbGpHdWFoQlhacmRPMmxWWWQtaW1nLTJfMTc3MDc1NzU0NzAwMF9uYTFmbl9jRzlzYVdONUxXTmhibU5sYkd4aGRHbHZibk0ucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=seNGA3A5qHPiBd9YHBWmRePfy4LDR0ZRjSvO~wlsXzp1oxkF9prVQDwK8Rkn-ylKoZNZ9PH64N7dDuJaDnsVe9znO4ubg6fMDGqCjZoup2kyNtFHuIA5uTjIW9t9KfHPSElHxeXI2fplp78KZGk03zmdAYwbgOm5m3hVjWSbiupKe8A6woP8ToZe5b7BG6hS7JB-yAD-Vh~8RrQnr2XzEUVcM1Tk1qlDNU6VRHVjNMrRKiYfs1H1OIk1HQ5-Dy-jBYgVOtkPGU2KsnWgRdLhZXU7pVHrRvHiJdIdLobH-~CWZKyXs7ZfbCiWwVAF7glhjH2RKkqzT9W5YGF4EEQ5lg__"
     },
     {
       title: "UFC Looker Dashboard",
