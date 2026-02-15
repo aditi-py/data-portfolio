@@ -53,16 +53,16 @@ export default function Home() {
       icon: BarChart3,
       tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
       link: "https://lookerstudio.google.com/reporting/d7df433e-bdbe-4bf6-97cc-f053e90c562e",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/bdw5gxveaR7pFi0VRLQEEc-img-1_1770761106000_na1fn_dWZjLWxvb2tlci1kYXNoYm9hcmQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L2JkdzVneHZlYVI3cEZpMFZSTFFFRWMtaW1nLTFfMTc3MDc2MTEwNjAwMF9uYTFmbl9kV1pqTFd4dmIydGxjaTFrWVhOb1ltOWhjbVEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=HVJJA0s~Hs2KWNKs81NQhDICWe498fjMd~OJWrK0E~Q9VPL-7p5X6yHOSOMKk2s3J213COk6ie~hCW9qeINAwrZ3CKZyrT9HV614oGIrKxKJqShU5rkY4XRveq2XO01cXt7wMQM-ygyXe5bpdRHTm38Q8YfqXwhsF4WbYZRzzU~DfvvCSByvJRWdGIP6y2vYIepto4Hnj7qYLZbb~SIzYZMMuB~qbHnWMbLKIlUWtk3E7u45udUJxUwhObDvDc6VvcfS5z6Xl7Gmhd01mG3VsMxOR2bfmQdfXNEI~CFT7Ex7N6cS-UyJhXlcBcZeDLuJwOk~ZUOzcEbbO6IOqDqebQ__"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/NFtmPUGtInpKpyRu.png"
     },
     {
-      title: "Crisis Tracking Automation (Coming Soon)",
+      title: "Crisis Tracking Automation",
       description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights. Will be containerized with Docker for scalable deployment.",
       type: "Workflow Automation",
       icon: Workflow,
       tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Docker", "Automation"],
       link: "#",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/bdw5gxveaR7pFi0VRLQEEc-img-2_1770761095000_na1fn_Y3Jpc2lzLXRyYWNraW5nLWxvY2tlZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94L2JkdzVneHZlYVI3cEZpMFZSTFFFRWMtaW1nLTJfMTc3MDc2MTA5NTAwMF9uYTFmbl9ZM0pwYzJsekxYUnlZV05yYVc1bkxXeHZZMnRsWkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Ncql5xmWJpi0U-rCXKf3NvmV66CrXyv9ZxlDRShWQilf-sK-zVAN74PobGTtBuQNZo6HU8XYFP9VQE~-SYIXJeA9NbwnQeu62hl2eU4oHmegXZZ5Dl9KpzWqlnpuM3LvoVOnyLky48-HBS1HrSKtOJtHT~TL-HbWHX~j~K0bKLsmV6AEwDbKJggO09ORj4ky7d3mm1CnHODPcu0FBC~u3JO0gaQN~VQtRLjz1aTUJkd8Q2K4qqbXbzuOIOOJ3dqhZC9zd7VineR81rRDbFfqj3yRoVxtJjKtXZf2giP6cCLrb-vlgF4V~mxV6CF6j69NcQHdQGWC~bbjB7djyH9PZg__"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/npBomabZZKIlnIxi.png"
     },
     {
       title: "Tableau Public Dashboards",
