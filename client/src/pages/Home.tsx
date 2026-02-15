@@ -21,7 +21,7 @@ export default function Home() {
   const projects = [
     {
       title: "AI-Generated Text Detection",
-      description: "Deep learning classifier using Keras/TensorFlow to detect AI-generated vs. human-written text. Engineered end-to-end ML pipeline with document embeddings, feature correlation analysis, and ROC-AUC evaluation on imbalanced datasets.",
+      description: "Deep learning classifier using Keras/TensorFlow to detect AI-generated vs. human-written text.",
       type: "Machine Learning",
       icon: Brain,
       tags: ["Python", "TensorFlow", "Keras", "Deep Learning", "NLP"],
@@ -30,7 +30,7 @@ export default function Home() {
     },
     {
       title: "Global Health Equity Analysis",
-      description: "Comprehensive data analysis examining geographic and economic distribution of 83 international health organizations. Revealed that 70% are headquartered in high-income countries while representing only 4% of global population. Built visualizations and population-adjusted metrics.",
+      description: "Comprehensive data analysis examining geographic and economic distribution of 83 international health organizations.",
       type: "Data Analysis",
       icon: BarChart3,
       tags: ["Python", "Pandas", "DuckDB", "Matplotlib", "Data Visualization"],
@@ -39,7 +39,7 @@ export default function Home() {
     },
     {
       title: "Insurance Policy Cancellation Prediction",
-      description: "Multiclass predictive model analyzing 1M+ insurance policies from the Kangaroo dataset (2013-2017). Built feature engineering pipeline to predict cancellation likelihood, identifying that coverage type C had highest dissatisfaction with 35K+ cancellations.",
+      description: "Multiclass predictive model analyzing 1M+ insurance policies from the Kangaroo dataset (2013-2017).",
       type: "Predictive Analytics",
       icon: Brain,
       tags: ["Python", "Scikit-learn", "Feature Engineering", "Classification", "Data Mining"],
@@ -48,7 +48,7 @@ export default function Home() {
     },
     {
       title: "UFC Looker Dashboard",
-      description: "Designed and deployed Snowflake ETL pipeline processing 15K+ UFC records using Python and SQL with dimensional modeling. Implemented data quality framework and performance optimization including weight class standardization. Interactive Looker dashboard with fighter statistics, match outcomes, and regional performance analysis.",
+      description: "Designed and deployed Snowflake ETL pipeline processing 15K+ UFC records using Python and SQL with dimensional modeling.",
       type: "Dashboard & Analytics",
       icon: BarChart3,
       tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
@@ -57,7 +57,7 @@ export default function Home() {
     },
     {
       title: "Crisis Tracking Automation",
-      description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights. Will be containerized with Docker for scalable deployment.",
+      description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights.",
       type: "Workflow Automation",
       icon: Workflow,
       tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Docker", "Automation"],
@@ -66,7 +66,7 @@ export default function Home() {
     },
     {
       title: "Tableau Public Dashboards",
-      description: "Collection of interactive Tableau dashboards showcasing data visualization expertise. Projects include USA airports heatmap analysis, stock market trends, sales performance metrics, streaming platform comparison, and global happiness index analysis.",
+      description: "Collection of interactive Tableau dashboards showcasing data visualization expertise.",
       type: "Data Visualization",
       icon: BarChart3,
       tags: ["Tableau", "Data Visualization", "Analytics", "Business Intelligence"],
@@ -125,7 +125,7 @@ export default function Home() {
                   <h2 className="font-display text-2xl font-bold mb-2">Aditi Neema</h2>
                   <p className="text-sm text-accent font-semibold mb-3">Data Engineer & Analyst</p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Passionate about transforming complex data into actionable insights. Specializing in building scalable data pipelines, predictive models, and automation workflows that drive measurable business impact.
+                    I'm all about finding the story in the data. I spend my days building systems that turn chaos into clarity, whether that's pipelines that just work, models that predict what's next, or automations that give people their time back.
                   </p>
                 </div>
               </Card>
@@ -136,9 +136,13 @@ export default function Home() {
               <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
                 Data Engineer & Analyst
               </h1>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                4+ years transforming legacy systems into modern, automated data solutions. Specializing in scalable pipelines, predictive models, and data-driven insights that drive business impact.
-              </p>
+              <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
+                <p>During COVID, I was part of a student support initiative trying to help people who were isolated and struggling. We had volunteers, resources, and ideas, but everything ran on spreadsheets and manual workflows.</p>
+                <p>We couldn't identify who needed help most. We couldn't track if our outreach was working. By the time we pulled together any kind of report, the moment to act had already passed.</p>
+                <p>That's when it clicked: the bottleneck wasn't the people or the ideas. It was the complete lack of systems to support them at scale.</p>
+                <p>Since then, I've spent the last 4 years building the infrastructure I wish we'd had. I've worked with product and fintech companies to modernize legacy systems, automate pipelines, and build models that surface insights when they're still actionable, not weeks later in a PowerPoint.</p>
+                <p>I'm still driven by the same thing: closing the gap between knowing something matters and actually being able to do something about it.</p>
+              </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
               <Card className="p-4 bg-card/50 border-border/50">
