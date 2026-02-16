@@ -1,14 +1,16 @@
 /**
- * Data Portfolio - Three Section Layout
+ * Data Portfolio - Five Section Layout
  * Section 1: About & Journey
  * Section 2: Skills & Projects
- * Section 3: Contact
+ * Section 3: Education
+ * Section 4: Work Experience
+ * Section 5: Contact
  */
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone } from "lucide-react";
 
 export default function Home() {
   const skills = [
@@ -94,6 +96,12 @@ export default function Home() {
               </a>
               <a href="#skills-projects" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
                 Skills & Projects
+              </a>
+              <a href="#education" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+                Education
+              </a>
+              <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+                Experience
               </a>
               <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
                 Contact
@@ -261,7 +269,169 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 3: CONTACT */}
+      {/* SECTION 3: EDUCATION */}
+      <section id="education" className="relative py-24 md:py-32 border-b border-border/50">
+        <div className="container">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Education</h2>
+          <div className="space-y-6 max-w-4xl">
+            {/* Master's Degree */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Master of Science</h3>
+                  <p className="text-accent font-medium mb-1">Business Analytics and Project Management</p>
+                  <p className="text-sm text-muted-foreground">University of Connecticut</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Aug 2022 - May 2024</p>
+                  <p className="text-sm text-muted-foreground">Connecticut, USA</p>
+                </div>
+              </div>
+            </Card>
+
+            {/* Bachelor's Degree */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Bachelor of Technology</h3>
+                  <p className="text-accent font-medium mb-1">Computer Science and Engineering</p>
+                  <p className="text-sm text-muted-foreground">Rajiv Gandhi Technical University</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Aug 2018 - May 2022</p>
+                  <p className="text-sm text-muted-foreground">MP, India</p>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: WORK EXPERIENCE */}
+      <section id="experience" className="relative py-24 md:py-32 border-b border-border/50">
+        <div className="container">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Work Experience</h2>
+          <div className="space-y-8 max-w-4xl">
+            {/* A2R Software Solutions */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Data Engineer</h3>
+                  <p className="text-accent font-medium mb-1">A2R Software Solutions</p>
+                  <p className="text-sm text-muted-foreground">Remote, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Jul 2025 - Nov 2025</p>
+                </div>
+              </div>
+              
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>• Transformed a 25,000+ line legacy SAS codebase into Python data infrastructure, building Azure-Snowflake pipelines to power product performance and pricing analytics.</p>
+                
+                <p>• Engineered 9,000+ features from 100+ event-level variables and reduced them to 15 key predictors to improve outcome and user behavior models.</p>
+                
+                <p>• Built automated ingestion with Selenium and SFTP into Azure Blob Storage and Logic Apps-Snowflake workflows, eliminating 20+ hours of manual work weekly.</p>
+                
+                <p>• Integrated AI model outputs into dashboards showing real-time probabilities, trends, and cohorts to guide product strategy and operations.</p>
+                
+                <p>• Created technical documentation for migration, feature engineering, and pipeline architecture to support team adoption and maintenance.</p>
+              </div>
+            </Card>
+
+            {/* Zavvis Technologies */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Data Science Analyst</h3>
+                  <p className="text-accent font-medium mb-1">Zavvis Technologies</p>
+                  <p className="text-sm text-muted-foreground">Remote, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Aug 2024 - Jun 2025</p>
+                </div>
+              </div>
+              
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>• Engineered scalable streaming and batch data pipelines using AWS Glue and Amazon Kinesis to process 20k+ daily financial transactions in real-time, enabling near-instant analytics for revenue forecasting and risk assessment.</p>
+                
+                <p>• Designed interactive Tableau dashboards connected to RDS databases, providing C-suite executives with real-time visibility into 15+ key financial metrics.</p>
+                
+                <p>• Integrated AI-powered time-series forecasting models (ARIMA, LSTM) into production data pipelines, achieving 73% prediction accuracy and automating revenue/expense forecasts to enable proactive business decisions.</p>
+                
+                <p>• Established Git workflows and CI/CD automation through GitHub Actions for model deployment and dashboard updates, reducing deployment errors and accelerating release cycles.</p>
+              </div>
+            </Card>
+
+            {/* University of Connecticut - Tutoring Assistant */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Tutoring Assistant: Mathematics and Statistics</h3>
+                  <p className="text-accent font-medium mb-1">University of Connecticut</p>
+                  <p className="text-sm text-muted-foreground">Connecticut, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Mar 2023 - May 2024</p>
+                </div>
+              </div>
+              
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>• Tutored undergraduate students in mathematics and statistics courses, including calculus, linear algebra, probability, and statistics. Conducted individual and group sessions tailored to diverse learning styles.</p>
+                
+                <p>• Created study guides, practice problems, and visual aids to reinforce complex concepts. Fostered an inclusive environment that built student confidence in quantitative coursework.</p>
+              </div>
+            </Card>
+
+            {/* University of Connecticut - Data Analyst Intern */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Data Analyst Intern</h3>
+                  <p className="text-accent font-medium mb-1">University of Connecticut: Budget, Planning and Institutional Research</p>
+                  <p className="text-sm text-muted-foreground">Connecticut, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Aug 2023 - Dec 2023</p>
+                </div>
+              </div>
+              
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>• Analyzed student lifecycle data to improve graduation and retention outcomes, contributing to a predictive model that led to a 20% increase in graduation rates.</p>
+                
+                <p>• Processed 2M+ rows of student-related institutional data across nine datasets, conducting full-scale EDA using SQL.</p>
+                
+                <p>• Identified and resolved intricate data quality issues using Python (pandas, NumPy) and SQL, establishing standardized cleaning procedures that streamlined data processing.</p>
+                
+                <p>• Acted as liaison between analysts and university stakeholders, conducting recurring meetings to translate institutional goals into data strategies.</p>
+              </div>
+            </Card>
+
+            {/* Infoserve Consultants */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Data Analyst</h3>
+                  <p className="text-accent font-medium mb-1">Infoserve Consultants</p>
+                  <p className="text-sm text-muted-foreground">MP, India</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Jun 2020 - Jun 2022</p>
+                </div>
+              </div>
+              
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>• Conducted in-depth EDA to identify critical drivers of loan defaults, including credit score, income level, and debt-to-income ratio, enabling the development of targeted risk mitigation strategies.</p>
+                
+                <p>• Collaborated with risk management teams to validate predictive models, ensuring alignment with RBI guidelines and regulatory requirements, and enhancing the accuracy of credit risk assessments.</p>
+                
+                <p>• Utilized JIRA to track project milestones, deliverables, and timelines, ensuring on-time completion of analysis.</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5: CONTACT */}
       <section id="contact" className="relative py-24 md:py-32">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
@@ -306,6 +476,3 @@ export default function Home() {
     </div>
   );
 }
-
-// Import Phone icon
-import { Phone } from "lucide-react";
