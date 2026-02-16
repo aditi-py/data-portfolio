@@ -46,7 +46,7 @@ export default function Home() {
       icon: Brain,
       tags: ["Python", "Scikit-learn", "Feature Engineering", "Classification", "Data Mining"],
       link: "https://github.com/aditi-py/Policy-Cancelations",
-      image: "https://drive.google.com/file/d/15_QxVq3_QCJedZ--nyfsDH_ZdH4wqyzX/view?usp=sharing"
+      image: "https://ibb.co/F4kqQhw7"
     },
     {
       title: "UFC Looker Dashboard",
