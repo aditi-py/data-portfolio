@@ -79,25 +79,25 @@ export default function Home() {
       title: "No-Code Modeling Platform",
       description: "A no-code modeling platform where users connect their own data, select ML algorithms, and tune parameters through a guided interface — no scripting required. Exposes model configuration options typically hidden behind code.",
       type: "Machine Learning",
-      icon: BarChart3,
+      icon: Workflow,
       tags: ["No-Code", "ML", "Claude Code", "UI/UX"],
-      link: "",
+      link: "Coming Soon",
       image: ""
     },
     {
       title: "Mood × Weather Research",
       description: "Original research on correlations between weather patterns and mood, matching individual streaming data with meteorological data and audio valence metrics. Findings synthesized against peer-reviewed literature from Google Scholar and arXiv.",
       type: "Research",
-      icon: BarChart3,
+      icon: CloudSun,
       tags: ["Research", "Claude Code", "Spotify API", "Meteorological Data", "Statistical Analysis"],
-      link: "",
+      link: "Coming Soon",
       image: ""
     },
     {
       title: "Data Analytics with Claude",
       description: "An AI-powered data analysis platform featuring a 6-agent orchestration system with custom slash commands and automated workflows. Supports Python, R, SQL, and JavaScript for automated EDA, statistical analysis, and report generation.",
       type: "Data Analysis",
-      icon: BarChart3,
+      icon: Bot,
       tags: ["Python", "R", "SQL", "JavaScript", "Multi-Agent", "Claude Code"],
       link: "https://github.com/aditi-py/Claude-Data-Analytics",
       image: ""
