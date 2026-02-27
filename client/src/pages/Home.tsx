@@ -10,7 +10,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity } from "lucide-react";
 
 export default function Home() {
   const skills = [
