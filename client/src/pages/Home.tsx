@@ -82,7 +82,7 @@ export default function Home() {
       icon: Workflow,
       tags: ["No-Code", "ML", "Claude Code", "UI/UX"],
       link: "Coming Soon",
-      image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png" alt="
+      image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png"
     },
     {
       title: "Mood × Weather Research",
@@ -91,7 +91,7 @@ export default function Home() {
       icon: CloudSun,
       tags: ["Research", "Claude Code", "Spotify API", "Meteorological Data", "Statistical Analysis"],
       link: "Coming Soon",
-      image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png" alt="
+      image: "https://i.ibb.co/cKBHPJQr/Gemini-Generated-Image-f5elyrf5elyrf5el.png"
     },
     {
       title: "Data Analytics with Claude",
