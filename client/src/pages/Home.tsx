@@ -77,12 +77,12 @@ export default function Home() {
     },
     {
       title: "No-Code Modeling Platform",
-      description: "A no-code modeling platform where users connect their own data, select ML algorithms, and tune parameters through a guided interface — no scripting required. Exposes model configuration options typically hidden behind code.",
+      description: "A no-code modeling platform where users connect their own data, select ML algorithms, and tune parameters through a guided interface: no scripting required. Exposes model configuration options typically hidden behind code.",
       type: "Machine Learning",
       icon: Workflow,
       tags: ["No-Code", "ML", "Claude Code", "UI/UX"],
       link: "Coming Soon",
-      image: ""
+      image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png" alt="
     },
     {
       title: "Mood × Weather Research",
@@ -91,7 +91,7 @@ export default function Home() {
       icon: CloudSun,
       tags: ["Research", "Claude Code", "Spotify API", "Meteorological Data", "Statistical Analysis"],
       link: "Coming Soon",
-      image: ""
+      image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png" alt="
     },
     {
       title: "Data Analytics with Claude",
@@ -100,7 +100,7 @@ export default function Home() {
       icon: Bot,
       tags: ["Python", "R", "SQL", "JavaScript", "Multi-Agent", "Claude Code"],
       link: "https://github.com/aditi-py/Claude-Data-Analytics",
-      image: ""
+      image: "https://i.ibb.co/Z17dSSd9/Gemini-Generated-Image-bae9fvbae9fvbae9-1.png"
     }
   ];
 
