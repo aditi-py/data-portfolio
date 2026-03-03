@@ -82,7 +82,7 @@ export default function Home() {
       icon: Workflow,
       tags: ["No-Code", "ML", "Claude Code", "UI/UX"],
       link: "https://github.com/aditi-py/Trainr",
-      image: "https://i.ibb.co/B23yBZrN/trainr.png"
+      image: "https://i.ibb.co/SwytBndr/trainr.png"
     },
     {
       title: "Mood × Weather Research",
