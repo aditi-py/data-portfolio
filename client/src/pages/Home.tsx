@@ -7,10 +7,17 @@
  * Section 5: Contact
  */
 
+import { useState, type ComponentType } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity, ChevronDown } from "lucide-react";
 
 export default function Home() {
   const skills = [
@@ -20,89 +27,97 @@ export default function Home() {
     { category: "Workflow Automation & AI Integration", items: ["n8n", "OpenAI API", "LLM-based Text Classification", "Automated Risk Scoring Pipelines"] }
   ];
 
-  const projects = [
-    {
-      title: "AI-Generated Text Detection",
-      description: "Deep learning classifier using Keras/TensorFlow to detect AI-generated vs. human-written text.",
-      type: "Machine Learning",
-      icon: Brain,
-      tags: ["Python", "TensorFlow", "Keras", "Deep Learning", "NLP"],
-      link: "https://github.com/aditi-py/AI-Generated-Text-Detection",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/hVHHOxydSkVxgfiE.png"
-    },
-    {
-      title: "Global Health Equity Analysis",
-      description: "Comprehensive data analysis examining geographic and economic distribution of 83 international health organizations.",
-      type: "Data Analysis",
-      icon: BarChart3,
-      tags: ["Python", "Pandas", "DuckDB", "Matplotlib", "Data Visualization"],
-      link: "https://github.com/aditi-py/Global-Health-Equity-Analysis-Geographic-Economic-Distribution-Study",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/qDOOdUErgGFhxEDT.png"
-    },
-    {
-      title: "Insurance Policy Cancellation Prediction",
-      description: "Multiclass predictive model analyzing 1M+ insurance policies from the Kangaroo dataset (2013-2017).",
-      type: "Predictive Analytics",
-      icon: Brain,
-      tags: ["Python", "Scikit-learn", "Feature Engineering", "Classification", "Data Mining"],
-      link: "https://github.com/aditi-py/Policy-Cancelations",
-      image: "https://i.ibb.co/0ypV0nMJ/Gemini-Generated-Image-gm4opngm4opngm4o.png"
-    },
-    {
-      title: "UFC Looker Dashboard",
-      description: "Designed and deployed Snowflake ETL pipeline processing 15K+ UFC records using Python and SQL with dimensional modeling.",
-      type: "Dashboard & Analytics",
-      icon: BarChart3,
-      tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
-      link: "https://lookerstudio.google.com/reporting/d7df433e-bdbe-4bf6-97cc-f053e90c562e",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/NFtmPUGtInpKpyRu.png"
-    },
-    {
-      title: "Crisis Tracking Automation",
-      description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights.",
-      type: "Workflow Automation",
-      icon: Workflow,
-      tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Docker", "Automation"],
-      link: "https://github.com/aditi-py/Crisis-Tracker",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/npBomabZZKIlnIxi.png"
-    },
-    {
-      title: "Tableau Public Dashboards",
-      description: "Collection of interactive Tableau dashboards showcasing data visualization expertise.",
-      type: "Data Visualization",
-      icon: BarChart3,
-      tags: ["Tableau", "Data Visualization", "Analytics", "Business Intelligence"],
-      link: "https://public.tableau.com/app/profile/aditi.neema/vizzes",
-      image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-2_1770760204000_na1fn_dGFibGVhdS1kYXNoYm9hcmRzLXNob3djYXNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTJfMTc3MDc2MDIwNDAwMF9uYTFmbl9kR0ZpYkdWaGRTMWtZWE5vWW05aGNtUnpMWE5vYjNkallYTmwucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QWQ9DcDLcGEoTVpYH1DnkPsU0HP071HWfpZJ6PUo43UCAC69ZlhKUETqyyvUvml3Rb37AJoYkUFJEWRd~uFvq0xIScXff4D5nW9vuOYqJTEtK-2w0bgvZzjLG~D-lIwAxJyf~uLKKs0TowaLT-9r5JLN6UHaAP8SSlHQS9kksVIxwR6RLBhsyi12PL7rje4WdGkHK6hZjYLQcQzI5Tqzxj3tkczg1L6P9rlxsB5WRbAcaJTvFndpRBTumOJjKrJkngviOVLM2k-xH~GdB9T7JIRjlLDuEsjrYrXg4w3DmCVR6A3t30dH5vU0jg4Y2wmNy9yUtrtn9nUd-udmEnFk5w__"
-    },
-    {
-      title: "Trainr",
-      description: "A no-code modeling platform where users connect their own data, select ML algorithms, and tune parameters through a guided interface: no scripting required. Exposes model configuration options typically hidden behind code.",
-      type: "Machine Learning",
-      icon: Workflow,
-      tags: ["No-Code", "ML", "Claude Code", "UI/UX"],
-      link: "https://github.com/aditi-py/Trainr",
-      image: "https://i.ibb.co/SwytBndr/trainr.png"
-    },
-    {
-      title: "Mood × Weather Research",
-      description: "Original research on correlations between weather patterns and mood, matching individual streaming data with meteorological data and audio valence metrics. Findings synthesized against peer-reviewed literature from Google Scholar and arXiv.",
-      type: "Research",
-      icon: CloudSun,
-      tags: ["Research", "Claude Code", "Spotify API", "Meteorological Data", "Statistical Analysis"],
-      link: "Coming Soon",
-      image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png"
-    },
-    {
-      title: "Data Analytics with Claude",
-      description: "An AI-powered data analysis platform featuring a 6-agent orchestration system with custom slash commands and automated workflows. Supports Python, R, SQL, and JavaScript for automated EDA, statistical analysis, and report generation.",
-      type: "Data Analysis",
-      icon: Bot,
-      tags: ["Python", "R", "SQL", "JavaScript", "Multi-Agent", "Claude Code"],
-      link: "https://github.com/aditi-py/Claude-Data-Analytics",
-      image: "https://i.ibb.co/Z17dSSd9/Gemini-Generated-Image-bae9fvbae9fvbae9-1.png"
-    }
-  ];
+  const projectCategories: Record<string, {title: string; description: string; type: string; icon: ComponentType<{className?: string}>; tags: string[]; link: string; image: string;}[]> = {
+    "ML and Analytics": [
+      {
+        title: "AI-Generated Text Detection",
+        description: "Deep learning classifier using Keras/TensorFlow to detect AI-generated vs. human-written text.",
+        type: "Machine Learning",
+        icon: Brain,
+        tags: ["Python", "TensorFlow", "Keras", "Deep Learning", "NLP"],
+        link: "https://github.com/aditi-py/AI-Generated-Text-Detection",
+        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/hVHHOxydSkVxgfiE.png"
+      },
+      {
+        title: "Global Health Equity Analysis",
+        description: "Comprehensive data analysis examining geographic and economic distribution of 83 international health organizations.",
+        type: "Data Analysis",
+        icon: BarChart3,
+        tags: ["Python", "Pandas", "DuckDB", "Matplotlib", "Data Visualization"],
+        link: "https://github.com/aditi-py/Global-Health-Equity-Analysis-Geographic-Economic-Distribution-Study",
+        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/qDOOdUErgGFhxEDT.png"
+      },
+      {
+        title: "Insurance Policy Cancellation Prediction",
+        description: "Multiclass predictive model analyzing 1M+ insurance policies from the Kangaroo dataset (2013-2017).",
+        type: "Predictive Analytics",
+        icon: Brain,
+        tags: ["Python", "Scikit-learn", "Feature Engineering", "Classification", "Data Mining"],
+        link: "https://github.com/aditi-py/Policy-Cancelations",
+        image: "https://i.ibb.co/0ypV0nMJ/Gemini-Generated-Image-gm4opngm4opngm4o.png"
+      },
+    ],
+    "AI and Visualizations": [
+      {
+        title: "Crisis Tracking Automation",
+        description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights.",
+        type: "Workflow Automation",
+        icon: Workflow,
+        tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Docker", "Automation"],
+        link: "https://github.com/aditi-py/Crisis-Tracker",
+        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/npBomabZZKIlnIxi.png"
+      },
+      {
+        title: "Trainr",
+        description: "A no-code modeling platform where users connect their own data, select ML algorithms, and tune parameters through a guided interface: no scripting required. Exposes model configuration options typically hidden behind code.",
+        type: "Machine Learning",
+        icon: Workflow,
+        tags: ["No-Code", "ML", "Claude Code", "UI/UX"],
+        link: "https://github.com/aditi-py/Trainr",
+        image: "https://i.ibb.co/SwytBndr/trainr.png"
+      },
+      {
+        title: "Mood × Weather Research",
+        description: "Original research on correlations between weather patterns and mood, matching individual streaming data with meteorological data and audio valence metrics. Findings synthesized against peer-reviewed literature from Google Scholar and arXiv.",
+        type: "Research",
+        icon: CloudSun,
+        tags: ["Research", "Claude Code", "Spotify API", "Meteorological Data", "Statistical Analysis"],
+        link: "Coming Soon",
+        image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png"
+      },
+      {
+        title: "Data Analytics with Claude",
+        description: "An AI-powered data analysis platform featuring a 6-agent orchestration system with custom slash commands and automated workflows. Supports Python, R, SQL, and JavaScript for automated EDA, statistical analysis, and report generation.",
+        type: "Data Analysis",
+        icon: Bot,
+        tags: ["Python", "R", "SQL", "JavaScript", "Multi-Agent", "Claude Code"],
+        link: "https://github.com/aditi-py/Claude-Data-Analytics",
+        image: "https://i.ibb.co/Z17dSSd9/Gemini-Generated-Image-bae9fvbae9fvbae9-1.png"
+      },
+    ],
+    "Visualizations": [
+      {
+        title: "Tableau Public Dashboards",
+        description: "Collection of interactive Tableau dashboards showcasing data visualization expertise.",
+        type: "Data Visualization",
+        icon: BarChart3,
+        tags: ["Tableau", "Data Visualization", "Analytics", "Business Intelligence"],
+        link: "https://public.tableau.com/app/profile/aditi.neema/vizzes",
+        image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-2_1770760204000_na1fn_dGFibGVhdS1kYXNoYm9hcmRzLXNob3djYXNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTJfMTc3MDc2MDIwNDAwMF9uYTFmbl9kR0ZpYkdWaGRTMWtZWE5vWW05aGNtUnpMWE5vYjNkallYTmwucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QWQ9DcDLcGEoTVpYH1DnkPsU0HP071HWfpZJ6PUo43UCAC69ZlhKUETqyyvUvml3Rb37AJoYkUFJEWRd~uFvq0xIScXff4D5nW9vuOYqJTEtK-2w0bgvZzjLG~D-lIwAxJyf~uLKKs0TowaLT-9r5JLN6UHaAP8SSlHQS9kksVIxwR6RLBhsyi12PL7rje4WdGkHK6hZjYLQcQzI5Tqzxj3tkczg1L6P9rlxsB5WRbAcaJTvFndpRBTumOJjKrJkngviOVLM2k-xH~GdB9T7JIRjlLDuEsjrYrXg4w3DmCVR6A3t30dH5vU0jg4Y2wmNy9yUtrtn9nUd-udmEnFk5w__"
+      },
+      {
+        title: "UFC Looker Dashboard",
+        description: "Designed and deployed Snowflake ETL pipeline processing 15K+ UFC records using Python and SQL with dimensional modeling.",
+        type: "Dashboard & Analytics",
+        icon: BarChart3,
+        tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
+        link: "https://lookerstudio.google.com/reporting/d7df433e-bdbe-4bf6-97cc-f053e90c562e",
+        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/NFtmPUGtInpKpyRu.png"
+      },
+    ],
+  };
+
+  const [activeCategory, setActiveCategory] = useState<string>("ML and Analytics");
 
   const handleResumeClick = () => {
     window.open('/resume.pdf', '_blank');
@@ -117,26 +132,38 @@ export default function Home() {
             <div className="font-display text-xl font-semibold tracking-tight bg-gradient-to-r from-[#ec4899] via-[#a469d5] to-[#06b6d4] bg-clip-text text-transparent">
               Aditi Neema
             </div>
-            <div className="flex items-center gap-6">
-              <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-                About
-              </a>
-              <a href="#skills-projects" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-                Skills & Projects
-              </a>
-              <a href="#education" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-                Education
-              </a>
-              <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-                Experience
-              </a>
-              <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-                Contact
-              </a>
+            <div className="flex items-center gap-3">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="sm" className="gap-2">
+                    Menu
+                    <ChevronDown className="w-4 h-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-44">
+                  <DropdownMenuItem asChild>
+                    <a href="#about" className="cursor-pointer w-full">About Me</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="#skills-projects" className="cursor-pointer w-full">Skills</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="#skills-projects" className="cursor-pointer w-full">Projects</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="#experience" className="cursor-pointer w-full">Experience</a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
               <Button onClick={handleResumeClick} variant="outline" size="sm" className="gap-2">
                 <FileText className="w-4 h-4" />
                 Resume
               </Button>
+              <a href="#contact">
+                <Button variant="default" size="sm">
+                  Contact
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -244,9 +271,26 @@ export default function Home() {
 
           {/* Projects */}
           <div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Featured Projects</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-8">Featured Projects</h2>
+
+            {/* Category Filter Tabs */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {Object.keys(projectCategories).map((category) => (
+                <Button
+                  key={category}
+                  variant={activeCategory === category ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setActiveCategory(category)}
+                  className="transition-all"
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
+
+            {/* Project Grid */}
             <div className="grid md:grid-cols-2 gap-6">
-              {projects.map((project, idx) => {
+              {projectCategories[activeCategory].map((project, idx) => {
                 const IconComponent = project.icon;
                 return (
                   <Card key={idx} className="overflow-hidden hover:border-accent/50 transition-colors group bg-card/50 border-border/50">
