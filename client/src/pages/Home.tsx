@@ -7,7 +7,7 @@
  * Section 5: Contact
  */
 
-import { useState, type ComponentType } from "react";
+import { useState, useEffect, useRef, type ComponentType } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -119,6 +119,34 @@ export default function Home() {
 
   const [activeCategory, setActiveCategory] = useState<string>("ML and Analytics");
 
+  // Flipping heading words
+  const flipWords = ["Data Analyst & Engineer", "AI Enthusiast", "Nerd"];
+  const [wordIdx, setWordIdx] = useState(0);
+  const [flipState, setFlipState] = useState<'visible' | 'out' | 'in'>('visible');
+  const flipRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlipState('out');
+      flipRef.current = setTimeout(() => {
+        setWordIdx(prev => (prev + 1) % flipWords.length);
+        setFlipState('in');
+        requestAnimationFrame(() => requestAnimationFrame(() => setFlipState('visible')));
+      }, 280);
+    }, 2800);
+    return () => {
+      clearInterval(interval);
+      if (flipRef.current) clearTimeout(flipRef.current);
+    };
+  }, []);
+
+  const flipStyle: React.CSSProperties =
+    flipState === 'out'
+      ? { transform: 'rotateX(90deg)', opacity: 0, transition: 'transform 0.28s ease-in, opacity 0.2s ease-in' }
+      : flipState === 'in'
+      ? { transform: 'rotateX(-60deg)', opacity: 0, transition: 'none' }
+      : { transform: 'rotateX(0deg)', opacity: 1, transition: 'transform 0.28s ease-out, opacity 0.2s ease-out' };
+
   const handleResumeClick = () => {
     window.open('/resume.pdf', '_blank');
   };
@@ -148,7 +176,7 @@ export default function Home() {
                     <a href="#skills-projects" className="cursor-pointer w-full">Skills</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="#skills-projects" className="cursor-pointer w-full">Projects</a>
+                    <a href="#projects" className="cursor-pointer w-full">Projects</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href="#experience" className="cursor-pointer w-full">Experience</a>
@@ -170,23 +198,23 @@ export default function Home() {
       </nav>
 
       {/* SECTION 1: ABOUT & JOURNEY */}
-      <section id="about" className="relative py-24 md:py-32 border-b border-border/50">
+      <section id="about" className="relative pt-10 pb-12 md:pt-12 md:pb-16 border-b border-border/50 scroll-mt-16">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-12 items-start mb-12">
             {/* Profile Card */}
             <div className="md:col-span-1">
               <Card className="overflow-hidden bg-card/50 border-border/50 sticky top-24">
                 <div className="aspect-square overflow-hidden">
-                  <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/NKdUtdZiqdsNopfb.jpg" 
-                    alt="Aditi Neema" 
-                    className="w-full h-full object-cover"
+                  <img
+                    src="/aditi.png"
+                    alt="Aditi Neema"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <div className="p-6">
-                  <h2 className="font-display text-2xl font-bold mb-2">Aditi Neema</h2>
-                  <p className="text-sm text-accent font-semibold mb-3">Data Engineer & Analyst</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                <div className="p-4">
+                  <h2 className="font-display text-xl font-bold mb-1">Aditi Neema</h2>
+                  <p className="text-xs text-accent font-semibold mb-2">Data Engineer & Analyst</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     I'm all about finding the story in the data. I spend my days building systems that turn chaos into clarity, whether that's pipelines that just work, models that predict what's next, or automations that give people their time back.
                   </p>
                 </div>
@@ -195,8 +223,19 @@ export default function Home() {
 
             {/* Content */}
             <div className="md:col-span-2">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
-                Data Engineer & Analyst
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-snug">
+                Hello there, I am Aditi
+                <br />
+                <span className="text-muted-foreground font-medium text-3xl md:text-4xl">I am a </span>
+                <span style={{ display: 'inline-block', perspective: '600px' }}>
+                  <span
+                    className="text-accent"
+                    style={{ display: 'inline-block', transformOrigin: 'center bottom', ...flipStyle }}
+                  >
+                    {flipWords[wordIdx]}
+                  </span>
+                </span>
+                <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
                 <p>During COVID, I was part of a student support initiative trying to help people who were isolated and struggling. We had volunteers, resources, and ideas, but everything ran on spreadsheets and manual workflows.</p>
@@ -245,7 +284,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: SKILLS & PROJECTS */}
-      <section id="skills-projects" className="relative py-24 md:py-32 border-b border-border/50">
+      <section id="skills-projects" className="relative pt-6 pb-24 md:pt-8 md:pb-32 border-b border-border/50 scroll-mt-16">
         <div className="container">
           {/* Skills */}
           <div className="mb-20">
@@ -271,68 +310,78 @@ export default function Home() {
 
           {/* Projects */}
           <div>
+            <div id="projects" className="scroll-mt-16" />
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-8">Featured Projects</h2>
 
-            {/* Category Filter Tabs */}
-            <div className="flex flex-wrap gap-2 mb-8">
-              {Object.keys(projectCategories).map((category) => (
-                <Button
-                  key={category}
-                  variant={activeCategory === category ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setActiveCategory(category)}
-                  className="transition-all"
-                >
-                  {category}
-                </Button>
-              ))}
+            {/* Category Nav — scrolls to section */}
+            <div className="flex flex-wrap gap-2 mb-12 sticky top-16 z-40 bg-background/80 backdrop-blur py-3 -mx-4 px-4 border-b border-border/30">
+              {Object.keys(projectCategories).map((category) => {
+                const slug = category.toLowerCase().replace(/\s+/g, '-');
+                return (
+                  <Button
+                    key={category}
+                    variant="outline"
+                    size="sm"
+                    onClick={() => document.getElementById(`cat-${slug}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                    className="transition-all"
+                  >
+                    {category}
+                  </Button>
+                );
+              })}
             </div>
 
-            {/* Project Grid */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {projectCategories[activeCategory].map((project, idx) => {
-                const IconComponent = project.icon;
+            {/* All categories shown */}
+            <div className="space-y-16">
+              {Object.entries(projectCategories).map(([category, projects]) => {
+                const slug = category.toLowerCase().replace(/\s+/g, '-');
                 return (
-                  <Card key={idx} className="overflow-hidden hover:border-accent/50 transition-colors group bg-card/50 border-border/50">
-                    {/* Project Image */}
-                    <div className="relative h-48 overflow-hidden bg-muted">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
+                  <div key={category}>
+                    <div id={`cat-${slug}`} className="scroll-mt-32" />
+                    <h3 className="font-display text-xl font-semibold mb-6 flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-accent flex-shrink-0"></span>
+                      {category}
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {projects.map((project, idx) => {
+                        const IconComponent = project.icon;
+                        return (
+                          <Card key={idx} className="overflow-hidden hover:border-accent/50 transition-colors group bg-card/50 border-border/50">
+                            <div className="relative h-48 overflow-hidden bg-muted">
+                              <img
+                                src={project.image}
+                                alt={project.title}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
+                            </div>
+                            <div className="p-6">
+                              <div className="flex items-start justify-between mb-3">
+                                <div>
+                                  <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
+                                  <p className="text-xs text-accent font-medium">{project.type}</p>
+                                </div>
+                                <IconComponent className="w-5 h-5 text-accent flex-shrink-0" />
+                              </div>
+                              <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                                {project.description}
+                              </p>
+                              <div className="flex flex-wrap gap-2 mb-4">
+                                {project.tags.map((tag, tidx) => (
+                                  <Badge key={tidx} variant="outline" className="text-xs">{tag}</Badge>
+                                ))}
+                              </div>
+                              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                <Button variant="default" size="sm" className="w-full gap-2">
+                                  View Project
+                                  <ExternalLink className="w-4 h-4" />
+                                </Button>
+                              </a>
+                            </div>
+                          </Card>
+                        );
+                      })}
                     </div>
-
-                    {/* Project Content */}
-                    <div className="p-6">
-                      <div className="flex items-start justify-between mb-3">
-                        <div>
-                          <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
-                          <p className="text-xs text-accent font-medium">{project.type}</p>
-                        </div>
-                        <IconComponent className="w-5 h-5 text-accent flex-shrink-0" />
-                      </div>
-
-                      <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-                        {project.description}
-                      </p>
-
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tags.map((tag, tidx) => (
-                          <Badge key={tidx} variant="outline" className="text-xs">
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
-
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        <Button variant="default" size="sm" className="w-full gap-2">
-                          View Project
-                          <ExternalLink className="w-4 h-4" />
-                        </Button>
-                      </a>
-                    </div>
-                  </Card>
+                  </div>
                 );
               })}
             </div>
@@ -341,7 +390,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 3: EDUCATION */}
-      <section id="education" className="relative py-24 md:py-32 border-b border-border/50">
+      <section id="education" className="relative py-24 md:py-32 border-b border-border/50 scroll-mt-16">
         <div className="container">
           <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Education</h2>
           <div className="space-y-6 max-w-4xl">
@@ -379,7 +428,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 4: WORK EXPERIENCE */}
-      <section id="experience" className="relative py-24 md:py-32 border-b border-border/50">
+      <section id="experience" className="relative pt-8 pb-24 md:pt-10 md:pb-32 border-b border-border/50 scroll-mt-16">
         <div className="container">
           <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Work Experience</h2>
           <div className="space-y-8 max-w-4xl">
