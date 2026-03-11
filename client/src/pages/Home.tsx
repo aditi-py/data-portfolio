@@ -24,7 +24,7 @@ export default function Home() {
     { category: "Data Science & ML", items: ["Python", "TensorFlow", "Keras", "Scikit-learn", "Deep Learning", "NLP"] },
     { category: "Analytics & BI", items: ["Tableau", "Looker", "Power BI", "SQL", "DuckDB", "Analytics"] },
     { category: "Data Engineering", items: ["Snowflake", "Airflow", "ETL/ELT", "AWS", "Azure", "CI/CD", "Docker"] },
-    { category: "Workflow Automation & AI Integration", items: ["n8n", "OpenAI API", "LLM-based Text Classification", "Automated Risk Scoring Pipelines"] }
+    { category: "Workflow Automation & AI Integration", items: ["Claude Code", "n8n", "MCP", "LLM-based Text Classification", "Automated Risk Scoring Pipelines"] }
   ];
 
   const projectCategories: Record<string, {title: string; description: string; type: string; icon: ComponentType<{className?: string}>; tags: string[]; link: string; image: string;}[]> = {
@@ -238,11 +238,12 @@ export default function Home() {
                 <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
-                <p>During COVID, I was part of a student support initiative trying to help people who were isolated and struggling. We had volunteers, resources, and ideas, but everything ran on spreadsheets and manual workflows.</p>
-                <p>We couldn't identify who needed help most. We couldn't track if our outreach was working. By the time we pulled together any kind of report, the moment to act had already passed.</p>
-                <p>That's when it clicked: the bottleneck wasn't the people or the ideas. It was the complete lack of systems to support them at scale.</p>
-                <p>Since then, I've spent the last 4 years building the infrastructure I wish we'd had. I've worked with product and fintech companies to modernize legacy systems, automate pipelines, and build models that surface insights when they're still actionable, not weeks later in a PowerPoint.</p>
-                <p>I'm still driven by the same thing: closing the gap between knowing something matters and actually being able to do something about it.</p>
+                <p>During COVID, I was part of a student support initiative trying to help people who were isolated and struggling. We had volunteers, resources, and ideas, but everything ran on spreadsheets and gut feelings.</p>
+                <p>We couldn't identify who needed help most. We couldn't tell if our outreach was working. By the time we pulled together any kind of report, the moment to act had already passed.</p>
+                <p>That's when it clicked: the bottleneck wasn't the people or the ideas. It was the complete absence of systems to support them at scale.</p>
+                <p>Since then, I've spent the last 4 years building the infrastructure I wish we'd had. Working with product and fintech companies across the United States, I modernize legacy systems, automate pipelines, and build models that surface insights when they're still actionable, not weeks later buried in a slide deck.</p>
+                <p>I keep coming back to something Dostoevsky understood: institutions have a way of making individuals invisible. I'm drawn to the work of reversing that, using data to make the right person visible at the right moment.</p>
+                <p>When I'm not in the weeds of a pipeline, I'm usually painting, playing guitar, or deep in a novel. The messiness of those things keeps me honest about how rarely clean solutions exist.</p>
               </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
