@@ -57,7 +57,7 @@ export default function Home() {
         image: "https://i.ibb.co/0ypV0nMJ/Gemini-Generated-Image-gm4opngm4opngm4o.png"
       },
     ],
-    "AI and Visualizations": [
+    "AI": [
       {
         title: "Crisis Tracking Automation",
         description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights.",
