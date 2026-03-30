@@ -60,7 +60,7 @@ export default function Home() {
     "AI": [
       {
         title: "Crisis Tracking Automation",
-        description: "End-to-end automation workflow using n8n, OpenAI API, Google Sheets, and Looker for real-time crisis tracking and analysis of Reddit posts. Intelligent data pipeline with AI-powered insights.",
+        description: "Automated detection of crisis signals on Reddit using n8n and OpenAI. Built because people fall through the cracks in online communities and data can catch them before it is too late.",
         type: "Workflow Automation",
         icon: Workflow,
         tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Docker", "Automation"],
