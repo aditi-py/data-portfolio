@@ -242,23 +242,38 @@ export default function Home() {
                 <p>I also care deeply about where these tools are not being used: the gap between what evidence says about childhood emotional development and what actually gets implemented.</p>
               </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Card className="p-4 bg-card/50 border-border/50">
-                <div className="text-2xl font-bold text-accent">4+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </Card>
-              <Card className="p-4 bg-card/50 border-border/50">
-                <div className="text-2xl font-bold text-accent">20+</div>
-                <div className="text-sm text-muted-foreground">Projects Built</div>
-              </Card>
-              <Card className="p-4 bg-card/50 border-border/50">
-                <div className="text-2xl font-bold text-accent">100M+</div>
-                <div className="text-sm text-muted-foreground">Records Processed</div>
-              </Card>
-              <Card className="p-4 bg-card/50 border-border/50">
-                <div className="text-2xl font-bold text-accent">25+</div>
-                <div className="text-sm text-muted-foreground">Tools Mastered</div>
-              </Card>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-12">
+              {/* Engineering Stats */}
+              <div className="text-center">
+                <p className="text-[10px] uppercase tracking-[2px] text-primary font-medium mb-3">Engineering</p>
+                <div className="flex gap-8">
+                  <div>
+                    <div className="text-2xl font-bold text-primary">20+</div>
+                    <div className="text-xs text-muted-foreground">Projects</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-primary">100M+</div>
+                    <div className="text-xs text-muted-foreground">Records Processed</div>
+                  </div>
+                </div>
+              </div>
+              {/* Divider */}
+              <div className="hidden sm:block w-px h-12 bg-border/50"></div>
+              <div className="block sm:hidden h-px w-24 bg-border/50"></div>
+              {/* Advocacy Stats */}
+              <div className="text-center">
+                <p className="text-[10px] uppercase tracking-[2px] text-secondary font-medium mb-3">Advocacy</p>
+                <div className="flex gap-8">
+                  <div>
+                    <div className="text-2xl font-bold text-secondary">250+</div>
+                    <div className="text-xs text-muted-foreground">People Reached</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-secondary">SEL</div>
+                    <div className="text-xs text-muted-foreground">Certified</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
               <div className="flex gap-4">
