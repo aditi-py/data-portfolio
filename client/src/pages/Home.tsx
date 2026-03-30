@@ -327,13 +327,9 @@ export default function Home() {
               </Card>
               <Card className="p-5 bg-card/50 border-border/50">
                 <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Data for Good</p>
-                <p className="text-sm text-muted-foreground">Built a Reddit-based crisis detection system because people fall through the cracks and data can catch them.</p>
+                <p className="text-sm text-muted-foreground">Built a Reddit-based crisis detection system because people fall through the cracks and data can catch them. Tutored undergrad students in mathematics and statistics at UConn for over a year.</p>
               </Card>
             </div>
-
-            <p className="text-sm text-muted-foreground text-center">
-              Tutored undergrad students in mathematics and statistics at UConn for over a year.
-            </p>
           </div>
         </div>
       </section>
