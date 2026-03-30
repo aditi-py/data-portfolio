@@ -295,6 +295,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION: WHY I BUILD */}
+      <section id="why-i-build" className="relative py-24 md:py-32 border-b border-border/50 scroll-mt-16">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-xs uppercase tracking-[3px] text-secondary font-medium text-center mb-8">Why I Build</p>
+
+            <blockquote className="text-xl md:text-2xl font-display font-medium text-center leading-relaxed mb-8 text-foreground/90">
+              "If children were taught emotional and life skills the way they are taught to read, crime, suffering, and inequality would be significantly lower."
+            </blockquote>
+
+            <p className="text-base text-muted-foreground text-center leading-relaxed mb-16">
+              What breaks in childhood echoes through generations. The evidence is clear. The gap is not in the research. It is in the implementation. Parents getting mental health support ripples directly into how children develop. The whole family system is the unit of change.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <Card className="p-5 bg-card/50 border-border/50">
+                <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Peer Mental Health</p>
+                <p className="text-sm text-muted-foreground">Founded a peer mental health initiative during COVID-19 in India, reaching 250+ people.</p>
+              </Card>
+              <Card className="p-5 bg-card/50 border-border/50">
+                <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Emotional Support</p>
+                <p className="text-sm text-muted-foreground">Volunteer with Koko, the MIT peer-based emotional support initiative.</p>
+              </Card>
+              <Card className="p-5 bg-card/50 border-border/50">
+                <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Education</p>
+                <p className="text-sm text-muted-foreground">Completed CASEL Social-Emotional Learning certification.</p>
+              </Card>
+              <Card className="p-5 bg-card/50 border-border/50">
+                <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Data for Good</p>
+                <p className="text-sm text-muted-foreground">Built a Reddit-based crisis detection system because people fall through the cracks and data can catch them.</p>
+              </Card>
+            </div>
+
+            <p className="text-sm text-muted-foreground text-center">
+              Tutored undergrad students in mathematics and statistics at UConn for over a year.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 2: SKILLS & PROJECTS */}
       <section id="skills-projects" className="relative pt-6 pb-24 md:pt-8 md:pb-32 border-b border-border/50 scroll-mt-16">
         <div className="container">
