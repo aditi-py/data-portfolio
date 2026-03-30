@@ -282,7 +282,7 @@ export default function Home() {
               </div>
             </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center">
                 <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
                   <Button variant="default" size="lg" className="gap-2">
                     <Github className="w-5 h-5" />
