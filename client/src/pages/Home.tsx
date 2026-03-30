@@ -368,7 +368,7 @@ export default function Home() {
             <div id="projects" className="scroll-mt-16" />
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-8">Featured Projects</h2>
 
-            {/* Category Nav — scrolls to section */}
+            {/* Category Nav - scrolls to section */}
             <div className="flex flex-wrap gap-2 mb-12 sticky top-16 z-40 bg-background/80 backdrop-blur py-3 -mx-4 px-4 border-b border-border/30">
               {Object.keys(projectCategories).map((category) => {
                 const slug = category.toLowerCase().replace(/\s+/g, '-');
