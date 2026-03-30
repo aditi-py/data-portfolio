@@ -120,7 +120,7 @@ export default function Home() {
   const [activeCategory, setActiveCategory] = useState<string>("ML and Analytics");
 
   // Flipping heading words
-  const flipWords = ["Data Analyst & Engineer", "AI Enthusiast", "Nerd"];
+  const flipWords = ["Data & AI Engineer", "SEL Advocate", "Systems Thinker", "Builder"];
   const [wordIdx, setWordIdx] = useState(0);
   const [flipState, setFlipState] = useState<'visible' | 'out' | 'in'>('visible');
   const flipRef = useRef<ReturnType<typeof setTimeout> | null>(null);
