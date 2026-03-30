@@ -316,6 +316,7 @@ export default function Home() {
               <Card className="p-5 bg-card/50 border-border/50">
                 <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Peer Mental Health</p>
                 <p className="text-sm text-muted-foreground">Founded a peer mental health initiative during COVID-19 in India, reaching 250+ people.</p>
+                <p className="text-sm text-muted-foreground mt-2">Tutored undergrad students in mathematics and statistics at UConn for over a year.</p>
               </Card>
               <Card className="p-5 bg-card/50 border-border/50">
                 <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Emotional Support</p>
@@ -327,7 +328,7 @@ export default function Home() {
               </Card>
               <Card className="p-5 bg-card/50 border-border/50">
                 <p className="text-xs text-secondary font-medium uppercase tracking-wider mb-2">Data for Good</p>
-                <p className="text-sm text-muted-foreground">Built a Reddit-based crisis detection system because people fall through the cracks and data can catch them. Tutored undergrad students in mathematics and statistics at UConn for over a year.</p>
+                <p className="text-sm text-muted-foreground">Built a Reddit-based crisis detection system because people fall through the cracks and data can catch them.</p>
               </Card>
             </div>
           </div>
