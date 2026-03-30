@@ -184,6 +184,9 @@ export default function Home() {
                   <DropdownMenuItem asChild>
                     <a href="#experience" className="cursor-pointer w-full">Experience</a>
                   </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="#certifications" className="cursor-pointer w-full">Certifications</a>
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               <Button onClick={handleResumeClick} variant="outline" size="sm" className="gap-2">
@@ -476,51 +479,6 @@ export default function Home() {
               </div>
             </Card>
 
-            {/* Certifications */}
-            <div className="mt-10">
-              <h3 className="font-display text-lg font-semibold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                Certifications
-              </h3>
-              <div className="space-y-3">
-                <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                    <div>
-                      <p className="font-medium">SnowPro Core Certification</p>
-                      <p className="text-sm text-muted-foreground">Snowflake</p>
-                    </div>
-                    <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
-                  </div>
-                </Card>
-                <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                    <div>
-                      <p className="font-medium">Social-Emotional Learning Fundamentals</p>
-                      <p className="text-sm text-muted-foreground">CASEL (Collaborative for Academic, Social, and Emotional Learning)</p>
-                    </div>
-                    <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
-                  </div>
-                </Card>
-                <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                    <div>
-                      <p className="font-medium">Introduction to Model Context Protocol</p>
-                      <p className="text-sm text-muted-foreground">Anthropic</p>
-                    </div>
-                    <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
-                  </div>
-                </Card>
-                <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                    <div>
-                      <p className="font-medium">Introduction to Generative AI</p>
-                      <p className="text-sm text-muted-foreground">Google</p>
-                    </div>
-                    <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
-                  </div>
-                </Card>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -643,6 +601,51 @@ export default function Home() {
                 <p>• Collaborated with risk management teams to validate predictive models, ensuring alignment with RBI guidelines and regulatory requirements, and enhancing the accuracy of credit risk assessments.</p>
                 
                 <p>• Utilized JIRA to track project milestones, deliverables, and timelines, ensuring on-time completion of analysis.</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: CERTIFICATIONS */}
+      <section id="certifications" className="relative py-24 md:py-32 border-b border-border/50 scroll-mt-16">
+        <div className="container">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Certifications</h2>
+          <div className="space-y-3 max-w-4xl">
+            <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <div>
+                  <p className="font-medium">SnowPro Core Certification</p>
+                  <p className="text-sm text-muted-foreground">Snowflake</p>
+                </div>
+                <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
+              </div>
+            </Card>
+            <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <div>
+                  <p className="font-medium">Social-Emotional Learning Fundamentals</p>
+                  <p className="text-sm text-muted-foreground">CASEL (Collaborative for Academic, Social, and Emotional Learning)</p>
+                </div>
+                <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
+              </div>
+            </Card>
+            <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <div>
+                  <p className="font-medium">Introduction to Model Context Protocol</p>
+                  <p className="text-sm text-muted-foreground">Anthropic</p>
+                </div>
+                <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
+              </div>
+            </Card>
+            <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <div>
+                  <p className="font-medium">Introduction to Generative AI</p>
+                  <p className="text-sm text-muted-foreground">Google</p>
+                </div>
+                <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
               </div>
             </Card>
           </div>
