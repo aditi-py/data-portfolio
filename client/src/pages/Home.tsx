@@ -173,6 +173,9 @@ export default function Home() {
                     <a href="#about" className="cursor-pointer w-full">About Me</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
+                    <a href="#why-i-build" className="cursor-pointer w-full">Why I Build</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
                     <a href="#skills-projects" className="cursor-pointer w-full">Skills</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
