@@ -213,9 +213,9 @@ export default function Home() {
                 </div>
                 <div className="p-4">
                   <h2 className="font-display text-xl font-bold mb-1">Aditi Neema</h2>
-                  <p className="text-xs text-accent font-semibold mb-2">Data Engineer & Analyst</p>
+                  <p className="text-xs text-accent font-semibold mb-2">Data & AI Engineer</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    I'm all about finding the story in the data. I spend my days building systems that turn chaos into clarity, whether that's pipelines that just work, models that predict what's next, or automations that give people their time back.
+                    Data and AI engineer building systems that turn chaos into clarity. Equally invested in where data tools are not being used: the gaps in childhood development and mental health infrastructure.
                   </p>
                 </div>
               </Card>
@@ -238,12 +238,8 @@ export default function Home() {
                 <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
-                <p>During COVID, I was part of a student support initiative trying to help people who were isolated and struggling. We had volunteers, resources, and ideas, but everything ran on spreadsheets and gut feelings.</p>
-                <p>We couldn't identify who needed help most. We couldn't tell if our outreach was working. By the time we pulled together any kind of report, the moment to act had already passed.</p>
-                <p>That's when it clicked: the bottleneck wasn't the people or the ideas. It was the complete absence of systems to support them at scale.</p>
-                <p>Since then, I've spent the last 4 years building the infrastructure I wish we'd had. Working with product and fintech companies across the United States, I modernize legacy systems, automate pipelines, and build models that surface insights when they're still actionable, not weeks later buried in a slide deck.</p>
-                <p>I keep coming back to something Dostoevsky understood: institutions have a way of making individuals invisible. I'm drawn to the work of reversing that, using data to make the right person visible at the right moment.</p>
-                <p>When I'm not in the weeds of a pipeline, I'm usually painting, playing guitar, or deep in a novel. The messiness of those things keeps me honest about how rarely clean solutions exist.</p>
+                <p>I build data pipelines, ML models, and AI systems that turn chaos into clarity. Whether it is modernizing legacy SAS codebases into cloud infrastructure, engineering streaming ETL pipelines, or orchestrating multi-agent AI platforms, I focus on making insights actionable when they still matter.</p>
+                <p>I also care deeply about where these tools are not being used: the gap between what evidence says about childhood emotional development and what actually gets implemented.</p>
               </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
