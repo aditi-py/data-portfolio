@@ -222,9 +222,9 @@ export default function Home() {
                 </div>
                 <div className="p-4">
                   <h2 className="font-display text-xl font-bold mb-1">Aditi Neema</h2>
-                  <p className="text-xs text-accent font-semibold mb-2">Data & AI Engineer</p>
+                  <p className="text-xs text-accent font-semibold mb-2">Data Analyst & Engineer</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Data and AI engineer building systems that turn chaos into clarity. Equally invested in where data tools are not being used: the gaps in childhood development and mental health infrastructure.
+                    Turning chaos into clarity. Equally invested in where data tools are not being used: the gaps in childhood development and mental health infrastructure.
                   </p>
                 </div>
               </Card>
@@ -247,7 +247,7 @@ export default function Home() {
                 <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
-                <p>Making Data Make Sense: I build data pipelines, ML models, and AI systems that turn chaos into clarity. Whether it is modernizing legacy SAS codebases into cloud infrastructure, engineering streaming ETL pipelines, or orchestrating multi-agent AI platforms, I focus on making insights actionable when they still matter.</p>
+                <p>Making Data Make Sense: I analyze and build data pipelines, ML models, and AI systems that turn chaos into clarity. Whether it is modernizing legacy SAS codebases into cloud infrastructure, engineering streaming ETL pipelines, or orchestrating multi-agent AI platforms, I focus on making insights actionable when they still matter.</p>
               </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-12">
