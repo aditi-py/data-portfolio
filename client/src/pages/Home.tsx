@@ -17,17 +17,21 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity, ChevronDown, Lock, Unlock, X } from "lucide-react";
 
 export default function Home() {
   const skills = [
-    { category: "Data Science & ML", items: ["Python", "TensorFlow", "Keras", "Scikit-learn", "Deep Learning", "NLP"] },
-    { category: "Analytics & BI", items: ["Tableau", "Looker", "Power BI", "SQL", "DuckDB", "Analytics"] },
-    { category: "Data Engineering", items: ["Snowflake", "Airflow", "ETL/ELT", "AWS", "Azure", "CI/CD", "Docker"] },
-    { category: "Workflow Automation & AI Integration", items: ["Claude Code", "n8n", "MCP", "AI Agents", "Automated Risk Scoring Pipelines"] }
+    { category: "Programming & Data", items: ["Python (pandas, NumPy, scikit-learn)", "SQL", "PySpark", "C++", "Selenium", "SAS"] },
+    { category: "APIs & Backend Services", items: ["FastAPI", "RESTful API", "Docker"] },
+    { category: "Data Engineering & Pipelines", items: ["ETL/ELT Workflows", "Data Modeling", "SFTP Ingestion", "Web Scraping"] },
+    { category: "AI Automation & Orchestration", items: ["n8n", "Claude Code", "Model Context Protocol (MCP)", "Multi-Agent Systems"] },
+    { category: "Machine Learning & Analytics", items: ["Time-Series Forecasting", "Statistical Analysis"] },
+    { category: "Cloud Platforms & Data Warehousing", items: ["AWS (Kinesis, Glue, RDS, S3)", "Azure (Blob Storage, Logic Apps)", "Snowflake"] },
+    { category: "DevOps & Version Control", items: ["Git", "GitHub", "GitHub Actions", "CI/CD Pipelines", "Automated Model Deployment"] },
+    { category: "Project Management & Collaboration", items: ["Agile Methodologies", "JIRA", "Stakeholder Communication"] }
   ];
 
-  const projectCategories: Record<string, {title: string; description: string; type: string; icon: ComponentType<{className?: string}>; tags: string[]; link: string; image: string;}[]> = {
+  const projectCategories: Record<string, {title: string; description: string; type: string; icon: ComponentType<{className?: string}>; tags: string[]; link: string; image: string; locked?: boolean;}[]> = {
     "ML and Analytics": [
       {
         title: "AI-Generated Text Detection",
@@ -94,6 +98,26 @@ export default function Home() {
         link: "https://github.com/aditi-py/Claude-Data-Analytics",
         image: "https://i.ibb.co/Z17dSSd9/Gemini-Generated-Image-bae9fvbae9fvbae9-1.png"
       },
+      {
+        title: "International Cold Emailing Agent",
+        description: "An AI-powered sales outreach agent custom built for friends. Automates international cold emailing with personalized messaging, saving significant time, money, and effort. Fully customized to individual requirements and business contexts.",
+        type: "AI Agent",
+        icon: Mail,
+        tags: ["Python", "Claude Code", "AI Agent", "Email Automation", "Sales"],
+        link: "https://github.com/aditi-py/InternationalColdEmailing",
+        image: "",
+        locked: true
+      },
+      {
+        title: "LinkedIn Outreach Agent",
+        description: "An AI-driven LinkedIn outreach agent built for friends. Automates personalized connection requests and messaging sequences with a built-in dashboard to track engagement, responses, and pipeline. Saves hours of manual outreach while keeping it personal.",
+        type: "AI Agent",
+        icon: Network,
+        tags: ["Python", "Claude Code", "AI Agent", "LinkedIn API", "Dashboard"],
+        link: "https://github.com/aditi-py/International",
+        image: "",
+        locked: true
+      },
     ],
     "Visualizations": [
       {
@@ -118,6 +142,34 @@ export default function Home() {
   };
 
   const [activeCategory, setActiveCategory] = useState<string>("ML and Analytics");
+
+  // Locked projects state
+  const [unlockedProjects, setUnlockedProjects] = useState<Set<string>>(new Set());
+  const [passwordModal, setPasswordModal] = useState<{open: boolean; projectTitle: string; projectLink: string}>({open: false, projectTitle: '', projectLink: ''});
+  const [passwordInput, setPasswordInput] = useState('');
+  const [passwordError, setPasswordError] = useState(false);
+
+  const handleLockedClick = (title: string, link: string) => {
+    if (unlockedProjects.has(title)) {
+      window.open(link, '_blank');
+      return;
+    }
+    setPasswordModal({open: true, projectTitle: title, projectLink: link});
+    setPasswordInput('');
+    setPasswordError(false);
+  };
+
+  const handlePasswordSubmit = () => {
+    if (passwordInput === 'Hiunlockme99') {
+      setUnlockedProjects(prev => new Set(prev).add(passwordModal.projectTitle));
+      setPasswordModal({open: false, projectTitle: '', projectLink: ''});
+      setPasswordInput('');
+      setPasswordError(false);
+      window.open(passwordModal.projectLink, '_blank');
+    } else {
+      setPasswordError(true);
+    }
+  };
 
   // Flipping heading words
   const flipWords = ["Data & AI Engineer", "SEL Advocate", "Systems Thinker", "Builder"];
@@ -366,37 +418,83 @@ export default function Home() {
                     <div className="grid md:grid-cols-2 gap-6">
                       {projects.map((project, idx) => {
                         const IconComponent = project.icon;
+                        const isLocked = project.locked && !unlockedProjects.has(project.title);
                         return (
-                          <Card key={idx} className="overflow-hidden hover:border-accent/50 transition-colors group bg-card/50 border-border/50">
+                          <Card key={idx} className={`overflow-hidden transition-colors group bg-card/50 border-border/50 ${isLocked ? 'border-secondary/30 hover:border-secondary/50' : 'hover:border-accent/50'}`}>
+                            {/* Image area */}
                             <div className="relative h-48 overflow-hidden bg-muted">
-                              <img
-                                src={project.image}
-                                alt={project.title}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                              />
+                              {project.locked && !project.image ? (
+                                <div className="w-full h-full flex items-center justify-center" style={{background: 'linear-gradient(135deg, rgba(155,123,212,0.15) 0%, rgba(232,126,154,0.15) 50%, rgba(155,123,212,0.1) 100%)'}}>
+                                  <div className="flex flex-col items-center gap-3">
+                                    {isLocked ? (
+                                      <Lock className="w-10 h-10 text-secondary/60" />
+                                    ) : (
+                                      <Unlock className="w-10 h-10 text-accent/60" />
+                                    )}
+                                    <span className="text-xs uppercase tracking-[2px] text-muted-foreground/60 font-medium">
+                                      {isLocked ? 'Password Protected' : 'Unlocked'}
+                                    </span>
+                                  </div>
+                                </div>
+                              ) : (
+                                <img
+                                  src={project.image}
+                                  alt={project.title}
+                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                />
+                              )}
                             </div>
                             <div className="p-6">
+                              {/* Title always visible */}
                               <div className="flex items-start justify-between mb-3">
                                 <div>
-                                  <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
+                                  <h3 className="font-semibold text-lg mb-1 flex items-center gap-2">
+                                    {project.title}
+                                    {project.locked && isLocked && <Lock className="w-3.5 h-3.5 text-secondary/70" />}
+                                  </h3>
                                   <p className="text-xs text-accent font-medium">{project.type}</p>
                                 </div>
                                 <IconComponent className="w-5 h-5 text-accent flex-shrink-0" />
                               </div>
-                              <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-                                {project.description}
-                              </p>
-                              <div className="flex flex-wrap gap-2 mb-4">
-                                {project.tags.map((tag, tidx) => (
-                                  <Badge key={tidx} variant="outline" className="text-xs">{tag}</Badge>
-                                ))}
+                              {/* Blurred content for locked projects */}
+                              <div className={isLocked ? 'select-none' : ''}>
+                                <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                                  {project.description}
+                                </p>
+                                <div className={`flex flex-wrap gap-2 mb-4 ${isLocked ? 'blur-[5px]' : ''}`}>
+                                  {project.tags.map((tag, tidx) => (
+                                    <Badge key={tidx} variant="outline" className="text-xs">{tag}</Badge>
+                                  ))}
+                                </div>
                               </div>
-                              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                <Button variant="default" size="sm" className="w-full gap-2">
-                                  View Project
-                                  <ExternalLink className="w-4 h-4" />
+                              {/* Button */}
+                              {project.locked ? (
+                                <Button
+                                  variant={isLocked ? "outline" : "default"}
+                                  size="sm"
+                                  className={`w-full gap-2 ${isLocked ? 'border-secondary/40 text-secondary hover:bg-secondary/10' : ''}`}
+                                  onClick={() => handleLockedClick(project.title, project.link)}
+                                >
+                                  {isLocked ? (
+                                    <>
+                                      <Lock className="w-4 h-4" />
+                                      Enter Password
+                                    </>
+                                  ) : (
+                                    <>
+                                      View Project
+                                      <ExternalLink className="w-4 h-4" />
+                                    </>
+                                  )}
                                 </Button>
-                              </a>
+                              ) : (
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                  <Button variant="default" size="sm" className="w-full gap-2">
+                                    View Project
+                                    <ExternalLink className="w-4 h-4" />
+                                  </Button>
+                                </a>
+                              )}
                             </div>
                           </Card>
                         );
@@ -454,6 +552,30 @@ export default function Home() {
         <div className="container">
           <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Work Experience</h2>
           <div className="space-y-8 max-w-4xl">
+            {/* Freelancing */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Consultant Data Engineer</h3>
+                  <p className="text-accent font-medium mb-1">Freelancing</p>
+                  <p className="text-sm text-muted-foreground">Remote, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Dec 2025 - Present</p>
+                </div>
+              </div>
+
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>Created a Reddit Crisis Detection tracker using n8n, OpenAI API, and Looker to classify and visualize mental health risk signals in real-time across subreddits.</p>
+
+                <p>Built a LinkedIn Outreach Bot that automates targeted connection requests and follow-up messaging to professionals filtered by company and country, using Python, Playwright, and SQLite.</p>
+
+                <p>Built Trainr, a no-code ML modeling platform where users connect data, select algorithms, and tune parameters through a guided interface, no scripting required.</p>
+
+                <p>Developed a 6-agent AI data analysis platform in Claude Code with custom slash commands, automated EDA, and multi-language pipeline support (Python, R, SQL, JS).</p>
+              </div>
+            </Card>
+
             {/* A2R Software Solutions */}
             <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
@@ -466,17 +588,13 @@ export default function Home() {
                   <p className="text-sm font-medium text-muted-foreground">Jul 2025 - Nov 2025</p>
                 </div>
               </div>
-              
+
               <div className="space-y-3 text-sm text-muted-foreground">
-                <p>• Transformed a 25,000+ line legacy SAS codebase into Python data infrastructure, building Azure-Snowflake pipelines to power product performance and pricing analytics.</p>
-                
-                <p>• Engineered 9,000+ features from 100+ event-level variables and reduced them to 15 key predictors to improve outcome and user behavior models.</p>
-                
-                <p>• Built automated ingestion with Selenium and SFTP into Azure Blob Storage and Logic Apps-Snowflake workflows, eliminating 20+ hours of manual work weekly.</p>
-                
-                <p>• Integrated AI model outputs into dashboards showing real-time probabilities, trends, and cohorts to guide product strategy and operations.</p>
-                
-                <p>• Created technical documentation for migration, feature engineering, and pipeline architecture to support team adoption and maintenance.</p>
+                <p>Led the full migration of a 25,000+ line SAS codebase into a modern Python-based data infrastructure, designing Azure-Snowflake ETL pipelines for product performance and pricing analytics.</p>
+
+                <p>Containerized the entire data platform using Docker for reproducible, production-ready deployments, and exposed pipeline orchestration via RESTful APIs for downstream service consumption.</p>
+
+                <p>Built automated data ingestion workflows eliminating 20+ hours of manual work weekly, and authored comprehensive technical documentation covering architecture, deployment runbooks, and API contracts.</p>
               </div>
             </Card>
 
@@ -492,15 +610,33 @@ export default function Home() {
                   <p className="text-sm font-medium text-muted-foreground">Aug 2024 - Jun 2025</p>
                 </div>
               </div>
-              
+
               <div className="space-y-3 text-sm text-muted-foreground">
-                <p>• Engineered scalable streaming and batch data pipelines using AWS Glue and Amazon Kinesis to process 20k+ daily financial transactions in real-time, enabling near-instant analytics for revenue forecasting and risk assessment.</p>
-                
-                <p>• Designed interactive Tableau dashboards connected to RDS databases, providing C-suite executives with real-time visibility into 15+ key financial metrics.</p>
-                
-                <p>• Integrated AI-powered time-series forecasting models (ARIMA, LSTM) into production data pipelines, achieving 73% prediction accuracy and automating revenue/expense forecasts to enable proactive business decisions.</p>
-                
-                <p>• Established Git workflows and CI/CD automation through GitHub Actions for model deployment and dashboard updates, reducing deployment errors and accelerating release cycles.</p>
+                <p>Engineered scalable streaming and batch ETL pipelines processing 50k+ daily financial transactions in real-time to power near-instant analytics.</p>
+
+                <p>Built and deployed FastAPI microservices to serve ARIMA and LSTM forecasting models as REST endpoints, enabling real-time revenue and expense predictions consumed by dashboards and internal tools.</p>
+
+                <p>Established Git workflows and CI/CD automation for containerized model deployments, reducing errors and accelerating release cycles across the team.</p>
+              </div>
+            </Card>
+
+            {/* University of Connecticut - Data Engineering Intern */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Data Engineering Intern</h3>
+                  <p className="text-accent font-medium mb-1">University of Connecticut: Budget, Planning & Institutional Research</p>
+                  <p className="text-sm text-muted-foreground">Connecticut, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Aug 2023 - Dec 2023</p>
+                </div>
+              </div>
+
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>Processed 2M+ rows of student-related institutional data across nine datasets, conducting full-scale Exploratory Data Analysis using SQL and Python (pandas, NumPy), establishing standardized cleaning procedures.</p>
+
+                <p>Contributed to predictive model development that drove a 20% increase in graduation rates, while acting as liaison between the analyst team and university leadership to translate findings into actionable decisions.</p>
               </div>
             </Card>
 
@@ -508,7 +644,7 @@ export default function Home() {
             <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                 <div>
-                  <h3 className="font-display text-xl font-semibold mb-2">Tutoring Assistant: Mathematics and Statistics</h3>
+                  <h3 className="font-display text-xl font-semibold mb-2">Tutoring Assistant: Mathematics & Statistics</h3>
                   <p className="text-accent font-medium mb-1">University of Connecticut</p>
                   <p className="text-sm text-muted-foreground">Connecticut, USA</p>
                 </div>
@@ -516,35 +652,9 @@ export default function Home() {
                   <p className="text-sm font-medium text-muted-foreground">Mar 2023 - May 2024</p>
                 </div>
               </div>
-              
-              <div className="space-y-3 text-sm text-muted-foreground">
-                <p>• Tutored undergraduate students in mathematics and statistics courses, including calculus, linear algebra, probability, and statistics. Conducted individual and group sessions tailored to diverse learning styles.</p>
-                
-                <p>• Created study guides, practice problems, and visual aids to reinforce complex concepts. Fostered an inclusive environment that built student confidence in quantitative coursework.</p>
-              </div>
-            </Card>
 
-            {/* University of Connecticut - Data Analyst Intern */}
-            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-                <div>
-                  <h3 className="font-display text-xl font-semibold mb-2">Data Analyst Intern</h3>
-                  <p className="text-accent font-medium mb-1">University of Connecticut: Budget, Planning and Institutional Research</p>
-                  <p className="text-sm text-muted-foreground">Connecticut, USA</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm font-medium text-muted-foreground">Aug 2023 - Dec 2023</p>
-                </div>
-              </div>
-              
               <div className="space-y-3 text-sm text-muted-foreground">
-                <p>• Analyzed student lifecycle data to improve graduation and retention outcomes, contributing to a predictive model that led to a 20% increase in graduation rates.</p>
-                
-                <p>• Processed 2M+ rows of student-related institutional data across nine datasets, conducting full-scale EDA using SQL.</p>
-                
-                <p>• Identified and resolved intricate data quality issues using Python (pandas, NumPy) and SQL, establishing standardized cleaning procedures that streamlined data processing.</p>
-                
-                <p>• Acted as liaison between analysts and university stakeholders, conducting recurring meetings to translate institutional goals into data strategies.</p>
+                <p>Tutored undergraduate students in calculus, linear algebra, probability, and statistics through individual and group sessions adapted to diverse learning styles.</p>
               </div>
             </Card>
 
@@ -560,13 +670,13 @@ export default function Home() {
                   <p className="text-sm font-medium text-muted-foreground">Jun 2020 - Jun 2022</p>
                 </div>
               </div>
-              
+
               <div className="space-y-3 text-sm text-muted-foreground">
-                <p>• Conducted in-depth EDA to identify critical drivers of loan defaults, including credit score, income level, and debt-to-income ratio, enabling the development of targeted risk mitigation strategies.</p>
-                
-                <p>• Collaborated with risk management teams to validate predictive models, ensuring alignment with RBI guidelines and regulatory requirements, and enhancing the accuracy of credit risk assessments.</p>
-                
-                <p>• Utilized JIRA to track project milestones, deliverables, and timelines, ensuring on-time completion of analysis.</p>
+                <p>Conducted in-depth EDA using SQL to uncover key drivers of loan defaults, supporting risk teams in building and validating predictive models aligned with regulatory requirements.</p>
+
+                <p>Collaborated cross-functionally with risk teams to ensure model outputs met compliance standards, an early exposure to production-grade, high-stakes data work.</p>
+
+                <p>Managed milestones and deliverables across analytical workstreams, ensuring on-time completion.</p>
               </div>
             </Card>
           </div>
@@ -581,7 +691,16 @@ export default function Home() {
             <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                 <div>
-                  <p className="font-medium">SnowPro Core Certification</p>
+                  <p className="font-medium">SnowPro Associate - Platform</p>
+                  <p className="text-sm text-muted-foreground">Snowflake</p>
+                </div>
+                <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
+              </div>
+            </Card>
+            <Card className="p-6 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <div>
+                  <p className="font-medium">From Zero to Agents: Building End-To-End Data Pipelines for an AI Agent</p>
                   <p className="text-sm text-muted-foreground">Snowflake</p>
                 </div>
                 <Badge variant="secondary" className="w-fit text-xs">Completed</Badge>
@@ -697,6 +816,49 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Password Modal */}
+      {passwordModal.open && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={() => setPasswordModal({open: false, projectTitle: '', projectLink: ''})}>
+          <div className="bg-card border border-border rounded-xl p-8 max-w-sm w-full mx-4 shadow-2xl" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
+                  <Lock className="w-5 h-5 text-secondary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm">Protected Project</h3>
+                  <p className="text-xs text-muted-foreground">{passwordModal.projectTitle}</p>
+                </div>
+              </div>
+              <button onClick={() => setPasswordModal({open: false, projectTitle: '', projectLink: ''})} className="text-muted-foreground hover:text-foreground transition-colors">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <p className="text-sm text-muted-foreground mb-4">Enter the password to view this project.</p>
+            <input
+              type="password"
+              value={passwordInput}
+              onChange={e => { setPasswordInput(e.target.value); setPasswordError(false); }}
+              onKeyDown={e => e.key === 'Enter' && handlePasswordSubmit()}
+              placeholder="Password"
+              autoFocus
+              className={`w-full px-4 py-3 rounded-lg bg-background border text-sm outline-none transition-colors mb-2 ${passwordError ? 'border-red-500 focus:border-red-500' : 'border-border focus:border-secondary'}`}
+            />
+            {passwordError && (
+              <p className="text-xs text-red-500 mb-2">Incorrect password. Try again.</p>
+            )}
+            <Button
+              onClick={handlePasswordSubmit}
+              className="w-full mt-3 gap-2"
+              size="sm"
+            >
+              <Unlock className="w-4 h-4" />
+              Unlock Project
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
