@@ -24,7 +24,7 @@ export default function Home() {
     { category: "Data Science & ML", items: ["Python", "TensorFlow", "Keras", "Scikit-learn", "Deep Learning", "NLP"] },
     { category: "Analytics & BI", items: ["Tableau", "Looker", "Power BI", "SQL", "DuckDB", "Analytics"] },
     { category: "Data Engineering", items: ["Snowflake", "Airflow", "ETL/ELT", "AWS", "Azure", "CI/CD", "Docker"] },
-    { category: "Workflow Automation & AI Integration", items: ["Claude Code", "n8n", "MCP", "LLM-based Text Classification", "Automated Risk Scoring Pipelines"] }
+    { category: "Workflow Automation & AI Integration", items: ["Claude Code", "n8n", "MCP", "AI Agents", "Automated Risk Scoring Pipelines"] }
   ];
 
   const projectCategories: Record<string, {title: string; description: string; type: string; icon: ComponentType<{className?: string}>; tags: string[]; link: string; image: string;}[]> = {
@@ -247,8 +247,7 @@ export default function Home() {
                 <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
-                <p>I build data pipelines, ML models, and AI systems that turn chaos into clarity. Whether it is modernizing legacy SAS codebases into cloud infrastructure, engineering streaming ETL pipelines, or orchestrating multi-agent AI platforms, I focus on making insights actionable when they still matter.</p>
-                <p>I also care deeply about where these tools are not being used: the gap between what evidence says about childhood emotional development and what actually gets implemented.</p>
+                <p>Making Data Make Sense: I build data pipelines, ML models, and AI systems that turn chaos into clarity. Whether it is modernizing legacy SAS codebases into cloud infrastructure, engineering streaming ETL pipelines, or orchestrating multi-agent AI platforms, I focus on making insights actionable when they still matter.</p>
               </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-12">
