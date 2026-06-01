@@ -155,7 +155,7 @@ export default function Home() {
       icon: Bot,
       title: "AI Agents & Automation",
       tagline: "Automate the repetitive work holding your team back",
-      description: "Multi-agent orchestration, n8n workflows, Claude-powered tools, and outreach automation. If your team is doing it manually and it happens more than twice a week — it can be automated.",
+      description: "Multi-agent orchestration, n8n workflows, Claude-powered tools, and outreach automation. If your team is doing it manually and it happens more than twice a week, it can be automated.",
       outcomes: ["6-agent analytics orchestration platforms", "End-to-end outreach pipelines built for clients", "Real-time crisis detection systems"],
       tags: ["Claude Code", "n8n", "Python", "Multi-Agent", "MCP", "Playwright"]
     },
@@ -170,7 +170,7 @@ export default function Home() {
     {
       icon: Workflow,
       title: "End-to-End Data Consulting",
-      tagline: "From messy to production-ready — full lifecycle",
+      tagline: "From messy to production-ready, full lifecycle",
       description: "Data audit → architecture → build → documentation → handoff. You own everything at the end. No black boxes, no vendor lock-in, no 6-month agency timelines.",
       outcomes: ["Full architecture and deployment documentation", "Complete code ownership on handoff", "Team onboarding and runbooks included"],
       tags: ["Strategy", "Architecture", "CI/CD", "Documentation", "Training"]
@@ -343,7 +343,7 @@ export default function Home() {
                 <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
-                <p>I help companies turn messy data into systems that actually work — whether that is migrating a 25,000-line legacy codebase to the cloud, building AI agents that automate hours of manual work, or deploying ML models as production APIs.</p>
+                <p>I help companies turn messy data into systems that actually work. Whether that is migrating a 25,000-line legacy codebase to the cloud, building AI agents that automate hours of manual work, or deploying ML models as production APIs.</p>
                 <p className="text-base">I scope it, build it, and hand it over clean. <span className="text-foreground font-medium">Available for freelance and consulting projects.</span></p>
               </div>
             
@@ -886,7 +886,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-6">Got a data problem?</h2>
             <p className="text-lg text-muted-foreground mb-12">
-              Tell me what you're working on and I'll come back with how I'd approach it — no commitment required. I typically respond within 24 hours.
+              Tell me what you're working on and I'll come back with how I'd approach it. No commitment required. I typically respond within 24 hours.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -912,7 +912,7 @@ export default function Home() {
 
             <Card className="p-8 bg-card/50 border-border/50 text-center">
               <p className="text-muted-foreground mb-4">
-                Prefer to start with a proposal? Send me a quick message describing your project and I'll scope it out — no fluff, just a clear plan.
+                Prefer to start with a proposal? Send me a quick message describing your project and I'll scope it out. No fluff, just a clear plan.
               </p>
               <Button onClick={handleResumeClick} variant="outline" className="gap-2">
                 <FileText className="w-4 h-4" />
