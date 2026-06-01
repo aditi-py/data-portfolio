@@ -8,6 +8,7 @@
  */
 
 import { useState, useEffect, useRef, type ComponentType } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -248,6 +249,11 @@ export default function Home() {
               Aditi Neema
             </div>
             <div className="flex items-center gap-3">
+              <Link href="/services">
+                <Button variant="outline" size="sm" className="gap-2 border-accent/40 text-accent hover:bg-accent/10">
+                  Services
+                </Button>
+              </Link>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="sm" className="gap-2">
