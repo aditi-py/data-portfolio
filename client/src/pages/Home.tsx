@@ -18,7 +18,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity, ChevronDown, Lock, Unlock, X, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity, ChevronDown, Lock, Unlock, X, ArrowRight } from "lucide-react";
 
 export default function Home() {
   const skills = [
@@ -142,41 +142,6 @@ export default function Home() {
     ],
   };
 
-  const services = [
-    {
-      icon: Cpu,
-      title: "Data Engineering & Pipelines",
-      tagline: "Turn raw data into reliable infrastructure",
-      description: "ETL/ELT pipelines, cloud migrations (SAS → Python), streaming ingestion, and data warehousing on Snowflake, Azure, and AWS. Built to run in production, not just demos.",
-      outcomes: ["Eliminated 20+ hrs/week of manual work", "Processed 100M+ records across projects", "Led 25,000-line legacy codebase migration"],
-      tags: ["Python", "Snowflake", "Azure", "AWS", "Docker", "SQL"]
-    },
-    {
-      icon: Bot,
-      title: "AI Agents & Automation",
-      tagline: "Automate the repetitive work holding your team back",
-      description: "Multi-agent orchestration, n8n workflows, Claude-powered tools, and outreach automation. If your team is doing it manually and it happens more than twice a week, it can be automated.",
-      outcomes: ["6-agent analytics orchestration platforms", "End-to-end outreach pipelines built for clients", "Real-time crisis detection systems"],
-      tags: ["Claude Code", "n8n", "Python", "Multi-Agent", "MCP", "Playwright"]
-    },
-    {
-      icon: Brain,
-      title: "ML & Predictive Analytics",
-      tagline: "Models that give you answers, not just numbers",
-      description: "Time-series forecasting, classification models, and ARIMA/LSTM systems deployed as REST APIs. Paired with dashboards your team will actually use.",
-      outcomes: ["Real-time revenue & expense forecasting APIs", "Contributed to 20% graduation rate improvement", "Analysed 1M+ insurance policies"],
-      tags: ["Python", "FastAPI", "scikit-learn", "Looker", "Tableau", "LSTM"]
-    },
-    {
-      icon: Workflow,
-      title: "End-to-End Data Consulting",
-      tagline: "From messy to production-ready, full lifecycle",
-      description: "Data audit → architecture → build → documentation → handoff. You own everything at the end. No black boxes, no vendor lock-in, no 6-month agency timelines.",
-      outcomes: ["Full architecture and deployment documentation", "Complete code ownership on handoff", "Team onboarding and runbooks included"],
-      tags: ["Strategy", "Architecture", "CI/CD", "Documentation", "Training"]
-    }
-  ];
-
   const [activeCategory, setActiveCategory] = useState<string>("ML and Analytics");
 
   // Locked projects state
@@ -264,9 +229,6 @@ export default function Home() {
                 <DropdownMenuContent align="end" className="w-44">
                   <DropdownMenuItem asChild>
                     <a href="#about" className="cursor-pointer w-full">About Me</a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <a href="#services" className="cursor-pointer w-full">Services</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href="#skills-projects" className="cursor-pointer w-full">Skills</a>
@@ -388,11 +350,11 @@ export default function Home() {
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </a>
-                <a href="#services">
+                <Link href="/services">
                   <Button variant="outline" size="lg" className="gap-2">
                     See What I Do
                   </Button>
-                </a>
+                </Link>
                 <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
                   <Button variant="ghost" size="lg" className="gap-2">
                     <Github className="w-5 h-5" />
@@ -401,62 +363,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION: SERVICES */}
-      <section id="services" className="relative py-24 md:py-32 border-b border-border/50 scroll-mt-16">
-        <div className="container">
-          <div className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[3px] text-accent font-medium mb-4">What I Build</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">Services</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I work with small teams, startups, and growing companies that need production-grade data work without the enterprise overhead.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
-            {services.map((service, idx) => {
-              const IconComponent = service.icon;
-              return (
-                <Card key={idx} className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors group">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
-                      <IconComponent className="w-5 h-5 text-accent" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg font-semibold mb-1">{service.title}</h3>
-                      <p className="text-sm text-accent font-medium">{service.tagline}</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
-                  <div className="space-y-2 mb-6">
-                    {service.outcomes.map((outcome, oidx) => (
-                      <div key={oidx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                        <span className="text-xs text-muted-foreground">{outcome}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {service.tags.map((tag, tidx) => (
-                      <Badge key={tidx} variant="outline" className="text-xs">{tag}</Badge>
-                    ))}
-                  </div>
-                </Card>
-              );
-            })}
-          </div>
-
-          <div className="text-center">
-            <p className="text-muted-foreground mb-6">Not sure which fits your problem? Just tell me what you're dealing with.</p>
-            <a href="#contact">
-              <Button size="lg" className="gap-2">
-                Let's talk about your project
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </a>
           </div>
         </div>
       </section>
