@@ -170,7 +170,7 @@ export default function Home() {
   };
 
   // Flipping heading words
-  const flipWords = ["Data & AI Engineer", "Nerd", "Systems Thinker", "Builder"];
+  const flipWords = ["Data & AI Engineer", "Nerd", "Systems Thinker", "Builder", "Chaos Coordinator"];
   const [wordIdx, setWordIdx] = useState(0);
   const [flipState, setFlipState] = useState<'visible' | 'out' | 'in'>('visible');
   const flipRef = useRef<ReturnType<typeof setTimeout> | null>(null);
