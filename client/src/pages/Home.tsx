@@ -270,9 +270,6 @@ export default function Home() {
                 <div className="p-4">
                   <h2 className="font-display text-xl font-bold mb-1">Aditi Neema</h2>
                   <p className="text-xs text-accent font-semibold mb-2">Data Analyst & Engineer</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Turning chaos into clarity. Equally invested in where data tools are not being used: the gaps in childhood development and mental health infrastructure.
-                  </p>
                 </div>
               </Card>
             </div>
