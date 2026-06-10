@@ -9,7 +9,7 @@ import {
 import { CheckCircle2, Calendar, Mail, ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
-const CALENDLY_URL = "https://calendly.com/YOUR_LINK_HERE"; // swap this when you create your Calendly
+const CALENDLY_URL = "https://calendly.com/aneema099";
 
 const services = [
   {
