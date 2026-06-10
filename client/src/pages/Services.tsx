@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { CheckCircle2, Calendar, Mail, ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
@@ -58,6 +64,44 @@ const steps = [
   },
 ];
 
+const faqs = [
+  {
+    question: "How do we get started?",
+    answer:
+      "Book a free 30-minute call or send me an email describing what is slowing you down. You do not need to know the technical solution. That is my job. I will come back with a clear proposal covering what I would build, how long it takes, and what it costs.",
+  },
+  {
+    question: "Where are you based and how do you charge?",
+    answer:
+      "I am based in India and work remotely with clients worldwide. Projects are billed in INR or USD depending on what works for you, scoped and agreed upfront before any work begins. No hourly surprises, no open-ended invoices.",
+  },
+  {
+    question: "Do you work across timezones?",
+    answer:
+      "Yes. Most of my work runs asynchronously, so timezone gaps are rarely a problem. I am happy to schedule calls at a time that works for you.",
+  },
+  {
+    question: "How long does a typical project take?",
+    answer:
+      "It depends on scope, but most automation and tooling projects land somewhere between one and four weeks. Larger data infrastructure builds take longer. I will give you a realistic timeline in the proposal.",
+  },
+  {
+    question: "What do you need from me to get started?",
+    answer:
+      "A clear picture of the problem and access to whatever the tool needs to work, like a spreadsheet, an account, or a sample of your data. I keep the lift on your side as light as possible.",
+  },
+  {
+    question: "What happens after the project is done?",
+    answer:
+      "You own everything: the code, the documentation, and a walkthrough so your team can run it without me. If something breaks or you want changes later, I am around.",
+  },
+  {
+    question: "What if I am not sure my problem is a fit?",
+    answer:
+      "Book a call anyway. If I cannot help, I will tell you honestly and point you toward someone who can. No pressure, no hard sell.",
+  },
+];
+
 export default function Services() {
   return (
     <div className="min-h-screen bg-transparent">
@@ -98,7 +142,13 @@ export default function Services() {
       <section className="relative pt-20 pb-24 md:pt-28 md:pb-32 border-b border-border/50">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs uppercase tracking-[3px] text-accent font-medium mb-6">Available for freelance and consulting</p>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span className="text-xs font-medium text-accent">Currently available for new projects</span>
+            </div>
             <h1 className="font-display text-4xl md:text-6xl font-bold tracking-tight mb-8 leading-tight">
               If it is eating your time,
               <br />
@@ -110,7 +160,7 @@ export default function Services() {
               I build custom data tools, AI automations, and pipelines for small teams and solo founders. No technical jargon required. Just tell me what is slowing you down.
             </p>
             <p className="text-base text-muted-foreground mb-12">
-              Based in Seattle · Working remotely worldwide · Billed in USD
+              Based in India · Working remotely worldwide · Billed in INR/USD
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
@@ -177,6 +227,30 @@ export default function Services() {
                 <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="relative py-24 md:py-32 border-b border-border/50">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">Questions you might have</h2>
+            <p className="text-lg text-muted-foreground">The stuff people usually ask before reaching out.</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, idx) => (
+                <AccordionItem key={idx} value={`faq-${idx}`} className="border-border/50">
+                  <AccordionTrigger className="text-left text-base font-medium hover:text-accent hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
