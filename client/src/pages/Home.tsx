@@ -8,6 +8,7 @@
  */
 
 import { useState, useEffect, useRef, type ComponentType } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -17,7 +18,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity, ChevronDown, Lock, Unlock, X } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, FileText, BarChart3, Workflow, Brain, Phone, Sliders, Settings2, CloudSun, Music, Bot, BarChart2, Network, Cpu, Activity, ChevronDown, Lock, Unlock, X, ArrowRight } from "lucide-react";
 
 export default function Home() {
   const skills = [
@@ -211,6 +212,11 @@ export default function Home() {
               Aditi Neema
             </div>
             <div className="flex items-center gap-3">
+              <Link href="/services">
+                <Button variant="outline" size="sm" className="gap-2 border-accent/40 text-accent hover:bg-accent/10">
+                  Services
+                </Button>
+              </Link>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="sm" className="gap-2">
@@ -291,8 +297,8 @@ export default function Home() {
                 <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
-                <p>Making Data Make Sense: I analyze and build data pipelines, ML models, and AI systems that turn chaos into clarity. Whether it is modernizing legacy SAS codebases into cloud infrastructure, engineering streaming ETL pipelines, or orchestrating multi-agent AI platforms, I focus on making insights actionable when they still matter.</p>
-                <p className="text-base">Outside of engineering, I care about the work being done in childhood development, mental health, and education. The practitioners are doing real, recognised work. It just does not get nearly enough attention yet, and I think it should.</p>
+                <p>I help companies turn messy data into systems that actually work. Whether that is migrating a 25,000-line legacy codebase to the cloud, building AI agents that automate hours of manual work, or deploying ML models as production APIs.</p>
+                <p className="text-base">I scope it, build it, and hand it over clean. <span className="text-foreground font-medium">Available for freelance and consulting projects.</span></p>
               </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-12">
@@ -329,17 +335,22 @@ export default function Home() {
               </div>
             </div>
 
-              <div className="flex gap-4 justify-center">
-                <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
+              <div className="flex flex-wrap gap-4 justify-center">
+                <a href="#contact">
                   <Button variant="default" size="lg" className="gap-2">
-                    <Github className="w-5 h-5" />
-                    View GitHub
+                    Work With Me
+                    <ArrowRight className="w-5 h-5" />
                   </Button>
                 </a>
-                <a href="https://www.linkedin.com/in/aditi-neema/" target="_blank" rel="noopener noreferrer">
+                <Link href="/services">
                   <Button variant="outline" size="lg" className="gap-2">
-                    <Linkedin className="w-5 h-5" />
-                    LinkedIn
+                    See What I Do
+                  </Button>
+                </Link>
+                <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="lg" className="gap-2">
+                    <Github className="w-5 h-5" />
+                    GitHub
                   </Button>
                 </a>
               </div>
@@ -734,9 +745,9 @@ export default function Home() {
       <section id="contact" className="relative py-24 md:py-32">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-6">Let's Connect</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-6">Got a data problem?</h2>
             <p className="text-lg text-muted-foreground mb-12">
-              Interested in collaborating or discussing data projects? Reach out via email or connect on LinkedIn.
+              Tell me what you're working on and I'll come back with how I'd approach it. No commitment required. I typically respond within 24 hours.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -762,11 +773,11 @@ export default function Home() {
 
             <Card className="p-8 bg-card/50 border-border/50 text-center">
               <p className="text-muted-foreground mb-4">
-                Ready to explore data solutions? Let's work together to transform your data into actionable insights.
+                Prefer to start with a proposal? Send me a quick message describing your project and I'll scope it out. No fluff, just a clear plan.
               </p>
-              <Button onClick={handleResumeClick} variant="default" className="gap-2">
+              <Button onClick={handleResumeClick} variant="outline" className="gap-2">
                 <FileText className="w-4 h-4" />
-                Download My Resume
+                View My Resume
               </Button>
             </Card>
           </div>
