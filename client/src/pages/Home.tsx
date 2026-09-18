@@ -338,15 +338,10 @@ export default function Home() {
             </div>
 
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href="#contact">
+                <Link href="/services">
                   <Button variant="default" size="lg" className="gap-2">
                     Work With Me
                     <ArrowRight className="w-5 h-5" />
-                  </Button>
-                </a>
-                <Link href="/services">
-                  <Button variant="outline" size="lg" className="gap-2">
-                    See What I Do
                   </Button>
                 </Link>
                 <a href="https://github.com/aditi-py" target="_blank" rel="noopener noreferrer">
