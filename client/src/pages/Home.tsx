@@ -41,7 +41,7 @@ export default function Home() {
         icon: Brain,
         tags: ["Python", "TensorFlow", "Keras", "Deep Learning", "NLP"],
         link: "https://github.com/aditi-py/AI-Generated-Text-Detection",
-        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/hVHHOxydSkVxgfiE.png"
+        image: "/ai-text-detection.png"
       },
       {
         title: "Global Health Equity Analysis",
@@ -50,7 +50,7 @@ export default function Home() {
         icon: BarChart3,
         tags: ["Python", "Pandas", "DuckDB", "Matplotlib", "Data Visualization"],
         link: "https://github.com/aditi-py/Global-Health-Equity-Analysis-Geographic-Economic-Distribution-Study",
-        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/qDOOdUErgGFhxEDT.png"
+        image: "/global-health-equity.png"
       },
       {
         title: "Insurance Policy Cancellation Prediction",
@@ -59,7 +59,7 @@ export default function Home() {
         icon: Brain,
         tags: ["Python", "Scikit-learn", "Feature Engineering", "Classification", "Data Mining"],
         link: "https://github.com/aditi-py/Policy-Cancelations",
-        image: "https://i.ibb.co/0ypV0nMJ/Gemini-Generated-Image-gm4opngm4opngm4o.png"
+        image: "/policy-cancellation.png"
       },
     ],
     "AI": [
@@ -70,7 +70,7 @@ export default function Home() {
         icon: Workflow,
         tags: ["n8n", "OpenAI", "Google Sheets", "Looker", "Docker", "Automation"],
         link: "https://github.com/aditi-py/Crisis-Tracker",
-        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/npBomabZZKIlnIxi.png"
+        image: "/crisis-tracker.png"
       },
       {
         title: "Trainr",
@@ -79,7 +79,7 @@ export default function Home() {
         icon: Workflow,
         tags: ["No-Code", "ML", "Claude Code", "UI/UX"],
         link: "https://github.com/aditi-py/Trainr",
-        image: "https://i.ibb.co/SwytBndr/trainr.png"
+        image: "/trainr.png"
       },
       {
         title: "Mood × Weather Research",
@@ -88,7 +88,7 @@ export default function Home() {
         icon: CloudSun,
         tags: ["Research", "Claude Code", "Spotify API", "Meteorological Data", "Statistical Analysis"],
         link: "Coming Soon",
-        image: "https://i.ibb.co/PsLnRxg6/Gemini-Generated-Image-f5elyrf5elyrf5el.png"
+        image: "/mood-weather.png"
       },
       {
         title: "Data Analytics with Claude",
@@ -97,7 +97,7 @@ export default function Home() {
         icon: Bot,
         tags: ["Python", "R", "SQL", "JavaScript", "Multi-Agent", "Claude Code"],
         link: "https://github.com/aditi-py/Claude-Data-Analytics",
-        image: "https://i.ibb.co/Z17dSSd9/Gemini-Generated-Image-bae9fvbae9fvbae9-1.png"
+        image: "/claude-analytics.png"
       },
       {
         title: "International Cold Emailing Agent",
@@ -126,7 +126,7 @@ export default function Home() {
         icon: BarChart3,
         tags: ["Tableau", "Data Visualization", "Analytics", "Business Intelligence"],
         link: "https://public.tableau.com/app/profile/aditi.neema/vizzes",
-        image: "https://private-us-east-1.manuscdn.com/sessionFile/bq9NZ7676caXeNMaKmjyWE/sandbox/0gtKpc3tfstzfgVLX4c8xv-img-2_1770760204000_na1fn_dGFibGVhdS1kYXNoYm9hcmRzLXNob3djYXNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYnE5Tlo3Njc2Y2FYZU5NYUttanlXRS9zYW5kYm94LzBndEtwYzN0ZnN0emZnVkxYNGM4eHYtaW1nLTJfMTc3MDc2MDIwNDAwMF9uYTFmbl9kR0ZpYkdWaGRTMWtZWE5vWW05aGNtUnpMWE5vYjNkallYTmwucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QWQ9DcDLcGEoTVpYH1DnkPsU0HP071HWfpZJ6PUo43UCAC69ZlhKUETqyyvUvml3Rb37AJoYkUFJEWRd~uFvq0xIScXff4D5nW9vuOYqJTEtK-2w0bgvZzjLG~D-lIwAxJyf~uLKKs0TowaLT-9r5JLN6UHaAP8SSlHQS9kksVIxwR6RLBhsyi12PL7rje4WdGkHK6hZjYLQcQzI5Tqzxj3tkczg1L6P9rlxsB5WRbAcaJTvFndpRBTumOJjKrJkngviOVLM2k-xH~GdB9T7JIRjlLDuEsjrYrXg4w3DmCVR6A3t30dH5vU0jg4Y2wmNy9yUtrtn9nUd-udmEnFk5w__"
+        image: "/tableau-dashboards.png"
       },
       {
         title: "UFC Looker Dashboard",
@@ -135,7 +135,7 @@ export default function Home() {
         icon: BarChart3,
         tags: ["Looker", "Snowflake", "Python", "SQL", "Data Warehouse"],
         link: "https://lookerstudio.google.com/reporting/d7df433e-bdbe-4bf6-97cc-f053e90c562e",
-        image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663344236677/NFtmPUGtInpKpyRu.png"
+        image: "/ufc-looker.png"
       },
     ],
   };
