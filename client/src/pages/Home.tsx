@@ -1,10 +1,12 @@
 /**
- * Data Portfolio - Five Section Layout
+ * Data Portfolio
  * Section 1: About & Journey
- * Section 2: Skills & Projects
+ * Section 2: Skills
  * Section 3: Education
  * Section 4: Work Experience
- * Section 5: Contact
+ * Section 5: Featured Projects
+ * Section 6: Certifications
+ * Section 7: Contact
  */
 
 import { useState, useEffect, useRef, type ComponentType } from "react";
@@ -229,16 +231,16 @@ export default function Home() {
                     <a href="#about" className="cursor-pointer w-full">About Me</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="#skills-projects" className="cursor-pointer w-full">Skills</a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <a href="#projects" className="cursor-pointer w-full">Projects</a>
+                    <a href="#skills" className="cursor-pointer w-full">Skills</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href="#education" className="cursor-pointer w-full">Education</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href="#experience" className="cursor-pointer w-full">Experience</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="#projects" className="cursor-pointer w-full">Projects</a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href="#certifications" className="cursor-pointer w-full">Certifications</a>
@@ -359,12 +361,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION: WHY I BUILD */}
-      {/* SECTION 2: SKILLS & PROJECTS */}
-      <section id="skills-projects" className="relative pt-6 pb-24 md:pt-8 md:pb-32 border-b border-border/50 scroll-mt-16">
+      {/* SECTION 2: SKILLS */}
+      <section id="skills" className="relative pt-6 pb-24 md:pt-8 md:pb-32 border-b border-border/50 scroll-mt-16">
         <div className="container">
           {/* Skills */}
-          <div className="mb-20">
+          <div>
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Technical Expertise</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {skills.map((skillGroup, idx) => (
@@ -382,131 +383,6 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Projects */}
-          <div>
-            <div id="projects" className="scroll-mt-16" />
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-8">Featured Projects</h2>
-
-            {/* Category Nav - scrolls to section */}
-            <div className="flex flex-wrap gap-2 mb-12 sticky top-16 z-40 bg-background/80 backdrop-blur py-3 -mx-4 px-4 border-b border-border/30">
-              {Object.keys(projectCategories).map((category) => {
-                const slug = category.toLowerCase().replace(/\s+/g, '-');
-                return (
-                  <Button
-                    key={category}
-                    variant="outline"
-                    size="sm"
-                    onClick={() => document.getElementById(`cat-${slug}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                    className="transition-all"
-                  >
-                    {category}
-                  </Button>
-                );
-              })}
-            </div>
-
-            {/* All categories shown */}
-            <div className="space-y-16">
-              {Object.entries(projectCategories).map(([category, projects]) => {
-                const slug = category.toLowerCase().replace(/\s+/g, '-');
-                return (
-                  <div key={category}>
-                    <div id={`cat-${slug}`} className="scroll-mt-32" />
-                    <h3 className="font-display text-xl font-semibold mb-6 flex items-center gap-3">
-                      <span className="w-2 h-2 rounded-full bg-accent flex-shrink-0"></span>
-                      {category}
-                    </h3>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {projects.map((project, idx) => {
-                        const IconComponent = project.icon;
-                        const isLocked = project.locked && !unlockedProjects.has(project.title);
-                        return (
-                          <Card key={idx} className={`overflow-hidden transition-colors group bg-card/50 border-border/50 ${isLocked ? 'border-secondary/30 hover:border-secondary/50' : 'hover:border-accent/50'}`}>
-                            {/* Image area */}
-                            <div className="relative h-48 overflow-hidden bg-muted">
-                              {project.locked && !project.image ? (
-                                <div className="w-full h-full flex items-center justify-center" style={{background: 'linear-gradient(135deg, rgba(155,123,212,0.15) 0%, rgba(232,126,154,0.15) 50%, rgba(155,123,212,0.1) 100%)'}}>
-                                  <div className="flex flex-col items-center gap-3">
-                                    {isLocked ? (
-                                      <Lock className="w-10 h-10 text-secondary/60" />
-                                    ) : (
-                                      <Unlock className="w-10 h-10 text-accent/60" />
-                                    )}
-                                    <span className="text-xs uppercase tracking-[2px] text-muted-foreground/60 font-medium">
-                                      {isLocked ? 'Password Protected' : 'Unlocked'}
-                                    </span>
-                                  </div>
-                                </div>
-                              ) : (
-                                <img
-                                  src={project.image}
-                                  alt={project.title}
-                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                />
-                              )}
-                            </div>
-                            <div className="p-6">
-                              {/* Title always visible */}
-                              <div className="flex items-start justify-between mb-3">
-                                <div>
-                                  <h3 className="font-semibold text-lg mb-1 flex items-center gap-2">
-                                    {project.title}
-                                    {project.locked && isLocked && <Lock className="w-3.5 h-3.5 text-secondary/70" />}
-                                  </h3>
-                                  <p className="text-xs text-accent font-medium">{project.type}</p>
-                                </div>
-                                <IconComponent className="w-5 h-5 text-accent flex-shrink-0" />
-                              </div>
-                              {/* Blurred content for locked projects */}
-                              <div className={isLocked ? 'select-none' : ''}>
-                                <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-                                  {project.description}
-                                </p>
-                                <div className={`flex flex-wrap gap-2 mb-4 ${isLocked ? 'blur-[5px]' : ''}`}>
-                                  {project.tags.map((tag, tidx) => (
-                                    <Badge key={tidx} variant="outline" className="text-xs">{tag}</Badge>
-                                  ))}
-                                </div>
-                              </div>
-                              {/* Button */}
-                              {project.locked ? (
-                                <Button
-                                  variant={isLocked ? "outline" : "default"}
-                                  size="sm"
-                                  className={`w-full gap-2 ${isLocked ? 'border-secondary/40 text-secondary hover:bg-secondary/10' : ''}`}
-                                  onClick={() => handleLockedClick(project.title, project.link)}
-                                >
-                                  {isLocked ? (
-                                    <>
-                                      <Lock className="w-4 h-4" />
-                                      Enter Password
-                                    </>
-                                  ) : (
-                                    <>
-                                      View Project
-                                      <ExternalLink className="w-4 h-4" />
-                                    </>
-                                  )}
-                                </Button>
-                              ) : (
-                                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                  <Button variant="default" size="sm" className="w-full gap-2">
-                                    View Project
-                                    <ExternalLink className="w-4 h-4" />
-                                  </Button>
-                                </a>
-                              )}
-                            </div>
-                          </Card>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </div>
@@ -556,6 +432,30 @@ export default function Home() {
         <div className="container">
           <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12">Work Experience</h2>
           <div className="space-y-8 max-w-4xl">
+            {/* Retinal Registry */}
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2">Applied AI Research Engineer (Computer Vision)</h3>
+                  <p className="text-accent font-medium mb-1">Retinal Registry</p>
+                  <p className="text-sm text-muted-foreground">Remote, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-muted-foreground">Jul 2026 - Present</p>
+                </div>
+              </div>
+
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>Leading technical research in computer vision, focused on stereo vision and 3D scene reconstruction with Dr. Gautam Thor.</p>
+
+                <p>Building and evaluating experimental pipelines using Python and established computer-vision frameworks, and reproducing methods from published research for new imaging configurations.</p>
+
+                <p>Working with camera calibration, feature matching, disparity estimation, point clouds, and multi-view imagery, and assessing datasets for image quality, calibration, metadata, and experimental suitability.</p>
+
+                <p>Designing reproducible workflows with version-controlled code, documented assumptions, and validation checks, translating scientific concepts into practical experiments alongside researchers and technical collaborators.</p>
+              </div>
+            </Card>
+
             {/* Freelancing */}
             <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
@@ -594,11 +494,9 @@ export default function Home() {
               </div>
 
               <div className="space-y-3 text-sm text-muted-foreground">
-                <p>Led the full migration of a 25,000+ line SAS codebase into a modern Python-based data infrastructure, designing Azure-Snowflake ETL pipelines for product performance and pricing analytics.</p>
+                <p>Led the full migration of a 25,000+ line SAS codebase into a modern Python-based data infrastructure, designing Azure-Snowflake ETL pipelines, eliminating 20+ hours of manual work weekly for product performance and pricing analytics.</p>
 
-                <p>Containerized the entire data platform using Docker for reproducible, production-ready deployments, and exposed pipeline orchestration via RESTful APIs for downstream service consumption.</p>
-
-                <p>Built automated data ingestion workflows eliminating 20+ hours of manual work weekly, and authored comprehensive technical documentation covering architecture, deployment runbooks, and API contracts.</p>
+                <p>Containerized the entire data platform using Docker for reproducible, production-ready deployments, and exposed pipeline orchestration via SFTP for downstream service consumption.</p>
               </div>
             </Card>
 
@@ -661,28 +559,132 @@ export default function Home() {
                 <p>Tutored undergraduate students in calculus, linear algebra, probability, and statistics through individual and group sessions adapted to diverse learning styles.</p>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
 
-            {/* Infoserve Consultants */}
-            <Card className="p-8 bg-card/50 border-border/50 hover:border-accent/30 transition-colors">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-                <div>
-                  <h3 className="font-display text-xl font-semibold mb-2">Data Analyst</h3>
-                  <p className="text-accent font-medium mb-1">Infoserve Consultants</p>
-                  <p className="text-sm text-muted-foreground">MP, India</p>
+      {/* SECTION: FEATURED PROJECTS */}
+      <section id="projects" className="relative py-24 md:py-32 border-b border-border/50 scroll-mt-16">
+        <div className="container">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-8">Featured Projects</h2>
+
+          {/* Category Nav - scrolls to section */}
+          <div className="flex flex-wrap gap-2 mb-12 sticky top-16 z-40 bg-background/80 backdrop-blur py-3 -mx-4 px-4 border-b border-border/30">
+            {Object.keys(projectCategories).map((category) => {
+              const slug = category.toLowerCase().replace(/\s+/g, '-');
+              return (
+                <Button
+                  key={category}
+                  variant="outline"
+                  size="sm"
+                  onClick={() => document.getElementById(`cat-${slug}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  className="transition-all"
+                >
+                  {category}
+                </Button>
+              );
+            })}
+          </div>
+
+          {/* All categories shown */}
+          <div className="space-y-16">
+            {Object.entries(projectCategories).map(([category, projects]) => {
+              const slug = category.toLowerCase().replace(/\s+/g, '-');
+              return (
+                <div key={category}>
+                  <div id={`cat-${slug}`} className="scroll-mt-32" />
+                  <h3 className="font-display text-xl font-semibold mb-6 flex items-center gap-3">
+                    <span className="w-2 h-2 rounded-full bg-accent flex-shrink-0"></span>
+                    {category}
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {projects.map((project, idx) => {
+                      const IconComponent = project.icon;
+                      const isLocked = project.locked && !unlockedProjects.has(project.title);
+                      return (
+                        <Card key={idx} className={`overflow-hidden transition-colors group bg-card/50 border-border/50 ${isLocked ? 'border-secondary/30 hover:border-secondary/50' : 'hover:border-accent/50'}`}>
+                          {/* Image area */}
+                          <div className="relative h-48 overflow-hidden bg-muted">
+                            {project.locked && !project.image ? (
+                              <div className="w-full h-full flex items-center justify-center" style={{background: 'linear-gradient(135deg, rgba(155,123,212,0.15) 0%, rgba(232,126,154,0.15) 50%, rgba(155,123,212,0.1) 100%)'}}>
+                                <div className="flex flex-col items-center gap-3">
+                                  {isLocked ? (
+                                    <Lock className="w-10 h-10 text-secondary/60" />
+                                  ) : (
+                                    <Unlock className="w-10 h-10 text-accent/60" />
+                                  )}
+                                  <span className="text-xs uppercase tracking-[2px] text-muted-foreground/60 font-medium">
+                                    {isLocked ? 'Password Protected' : 'Unlocked'}
+                                  </span>
+                                </div>
+                              </div>
+                            ) : (
+                              <img
+                                src={project.image}
+                                alt={project.title}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
+                            )}
+                          </div>
+                          <div className="p-6">
+                            {/* Title always visible */}
+                            <div className="flex items-start justify-between mb-3">
+                              <div>
+                                <h3 className="font-semibold text-lg mb-1 flex items-center gap-2">
+                                  {project.title}
+                                  {project.locked && isLocked && <Lock className="w-3.5 h-3.5 text-secondary/70" />}
+                                </h3>
+                                <p className="text-xs text-accent font-medium">{project.type}</p>
+                              </div>
+                              <IconComponent className="w-5 h-5 text-accent flex-shrink-0" />
+                            </div>
+                            {/* Blurred content for locked projects */}
+                            <div className={isLocked ? 'select-none' : ''}>
+                              <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                                {project.description}
+                              </p>
+                              <div className={`flex flex-wrap gap-2 mb-4 ${isLocked ? 'blur-[5px]' : ''}`}>
+                                {project.tags.map((tag, tidx) => (
+                                  <Badge key={tidx} variant="outline" className="text-xs">{tag}</Badge>
+                                ))}
+                              </div>
+                            </div>
+                            {/* Button */}
+                            {project.locked ? (
+                              <Button
+                                variant={isLocked ? "outline" : "default"}
+                                size="sm"
+                                className={`w-full gap-2 ${isLocked ? 'border-secondary/40 text-secondary hover:bg-secondary/10' : ''}`}
+                                onClick={() => handleLockedClick(project.title, project.link)}
+                              >
+                                {isLocked ? (
+                                  <>
+                                    <Lock className="w-4 h-4" />
+                                    Enter Password
+                                  </>
+                                ) : (
+                                  <>
+                                    View Project
+                                    <ExternalLink className="w-4 h-4" />
+                                  </>
+                                )}
+                              </Button>
+                            ) : (
+                              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                <Button variant="default" size="sm" className="w-full gap-2">
+                                  View Project
+                                  <ExternalLink className="w-4 h-4" />
+                                </Button>
+                              </a>
+                            )}
+                          </div>
+                        </Card>
+                      );
+                    })}
+                  </div>
                 </div>
-                <div className="text-right">
-                  <p className="text-sm font-medium text-muted-foreground">Jun 2020 - Jun 2022</p>
-                </div>
-              </div>
-
-              <div className="space-y-3 text-sm text-muted-foreground">
-                <p>Conducted in-depth EDA using SQL to uncover key drivers of loan defaults, supporting risk teams in building and validating predictive models aligned with regulatory requirements.</p>
-
-                <p>Collaborated cross-functionally with risk teams to ensure model outputs met compliance standards, an early exposure to production-grade, high-stakes data work.</p>
-
-                <p>Managed milestones and deliverables across analytical workstreams, ensuring on-time completion.</p>
-              </div>
-            </Card>
+              );
+            })}
           </div>
         </div>
       </section>
