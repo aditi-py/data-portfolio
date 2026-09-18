@@ -318,23 +318,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* Divider */}
-              <div className="hidden sm:block w-px h-12 bg-border/50"></div>
-              <div className="block sm:hidden h-px w-24 bg-border/50"></div>
-              {/* Advocacy Stats */}
-              <div className="text-center">
-                <p className="text-[10px] uppercase tracking-[2px] text-secondary font-medium mb-3">Advocacy</p>
-                <div className="flex gap-8">
-                  <div>
-                    <div className="text-2xl font-bold text-secondary">250+</div>
-                    <div className="text-xs text-muted-foreground">People Reached</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-secondary">SEL</div>
-                    <div className="text-xs text-muted-foreground">Certified</div>
-                  </div>
-                </div>
-              </div>
             </div>
 
               <div className="flex flex-wrap gap-4 justify-center">
