@@ -299,7 +299,7 @@ export default function Home() {
                 <span className="text-muted-foreground font-medium text-3xl md:text-4xl">.</span>
               </h1>
               <div className="text-lg text-muted-foreground mb-8 leading-relaxed space-y-4">
-                <p>I help companies turn messy data into systems that actually work. Whether that is migrating a 25,000-line legacy codebase to the cloud, building AI agents that automate hours of manual work, or deploying ML models as production APIs.</p>
+                <p>Data and AI engineer who turns messy, ambiguous problems into working systems, from migrating a 25,000-line legacy codebase to the cloud, to building AI agents that automate hours of manual work, to running computer-vision research on stereo depth and 3D reconstruction. I move comfortably between research and production: reading the literature, testing the idea, then shipping something reliable.</p>
                 <p className="text-base">I scope it, build it, and hand it over clean. <span className="text-foreground font-medium">Available for freelance and consulting projects.</span></p>
               </div>
             
