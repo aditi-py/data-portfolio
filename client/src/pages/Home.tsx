@@ -28,7 +28,7 @@ export default function Home() {
     { category: "APIs & Backend Services", items: ["FastAPI", "RESTful API", "Docker"] },
     { category: "Data Engineering & Pipelines", items: ["ETL/ELT Workflows", "Data Modeling", "SFTP Ingestion", "Web Scraping"] },
     { category: "AI Automation & Orchestration", items: ["n8n", "Claude Code", "Model Context Protocol (MCP)", "Multi-Agent Systems"] },
-    { category: "Machine Learning & Analytics", items: ["Time-Series Forecasting", "Statistical Analysis"] },
+    { category: "Machine Learning & Computer Vision", items: ["Time-Series Forecasting", "Statistical Analysis", "OpenCV", "Fisheye & Omnidirectional Imaging", "Stereo & Monocular Depth"] },
     { category: "Cloud Platforms & Data Warehousing", items: ["AWS (Kinesis, Glue, RDS, S3)", "Azure (Blob Storage, Logic Apps)", "Snowflake"] },
     { category: "DevOps & Version Control", items: ["Git", "GitHub", "GitHub Actions", "CI/CD Pipelines", "Automated Model Deployment"] },
     { category: "Project Management & Collaboration", items: ["Agile Methodologies", "JIRA", "Stakeholder Communication"] }
